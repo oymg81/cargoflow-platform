@@ -3,18 +3,22 @@
 import { useTranslations } from 'next-intl';
 import { motion } from 'framer-motion';
 import { ShieldCheck, Anchor, Compass } from 'lucide-react';
+import type { Variants } from "framer-motion";
 
 export default function AboutUs() {
   const t = useTranslations('AboutUs');
 
-  const fadeUp = {
-    hidden: { opacity: 0, y: 30 },
-    visible: { 
-      opacity: 1, 
-      y: 0,
-      transition: { duration: 0.8, ease: "easeOut" }
-    }
-  };
+const fadeUp: Variants = {
+  hidden: { opacity: 0, y: 30 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.6,
+      ease: "easeOut",
+    },
+  },
+};
 
   return (
     <section className="py-24 bg-white border-b border-gray-100 overflow-hidden relative">
