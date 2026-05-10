@@ -1,0 +1,46 @@
+import type { Metadata } from "next";
+import { NextIntlClientProvider } from 'next-intl';
+import { getMessages } from 'next-intl/server';
+import { notFound } from 'next/navigation';
+import { routing } from '@/i18n/routing';
+import Navbar from '@/components/layout/Navbar';
+import Footer from '@/components/layout/Footer';
+import "../globals.css";
+
+export const metadata: Metadata = {
+  title: "LOGISTI-K | Integrated Global Logistics Solutions",
+  description: "Reliable freight forwarding and logistics services connecting businesses worldwide.",
+};
+
+export default async function RootLayout({
+  children,
+  params
+}: {
+  children: React.ReactNode;
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  if (!routing.locales.includes(locale as any)) {
+    notFound();
+  }
+
+  const messages = await getMessages();
+
+  return (
+    <html
+      lang={locale}
+      className={`h-full antialiased`}
+    >
+      <body className="min-h-full flex flex-col bg-white text-[#07142b] font-sans">
+        <NextIntlClientProvider messages={messages}>
+          <Navbar />
+          <main className="flex-1">
+            {children}
+          </main>
+          <Footer />
+        </NextIntlClientProvider>
+      </body>
+    </html>
+  );
+}
+

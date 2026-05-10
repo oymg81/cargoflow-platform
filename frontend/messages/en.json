@@ -1,0 +1,77 @@
+{
+  "Navigation": {
+    "home": "Home",
+    "services": "Services",
+    "about": "About Us",
+    "track": "Tracking",
+    "resources": "Resources",
+    "contact": "Contact"
+  },
+  "Hero": {
+    "headline": "Integrated Global Logistics Solutions for Modern Businesses",
+    "subheadline": "Reliable freight forwarding, cargo transport, customs clearance, and warehousing solutions worldwide.",
+    "cta_track": "Track Shipment",
+    "cta_quote": "Request a Quote"
+  },
+  "MissionVision": {
+    "title": "Our Mission & Vision",
+    "mission_title": "Our Mission",
+    "mission_desc": "To deliver world-class integrated logistics solutions by efficiently, securely, and transparently managing every stage of the supply chain. We are committed to providing a seamless, reliable, and agile service, enabling our clients to operate with complete peace of mind while driving business growth.",
+    "vision_title": "Our Vision",
+    "vision_desc": "To establish ourselves as a leading global freight forwarder, recognized for operational excellence, continuous innovation, and our ability to connect international markets, creating sustainable value for our clients and strategic partners."
+  },
+  "AboutUs": {
+    "title": "About Us",
+    "paragraph1": "Logisti-k is a Miami-based freight forwarding company specializing in cargo transportation services. Our mission is to provide unique and efficient logistics solutions to manufacturers and courier agencies, focusing on offering integrated logistics services. With a commitment to excellence and customer satisfaction, we ensure seamless logistics and timely deliveries for all your shipping needs.",
+    "paragraph2": "We’re not just freight forwarders—we’re your logistics partners. From port to warehouse, from paperwork to the final mile, our team ensures your cargo moves seamlessly, safely, and on time. We pride ourselves on industry knowledge, responsiveness, and a customer-first approach."
+  },
+  "about": {
+    "title": "About Us",
+    "paragraph1": "Logisti-k is a Miami-based freight forwarding company specializing in cargo transportation services. Our mission is to provide unique and efficient logistics solutions to manufacturers and courier agencies, focusing on offering integrated logistics services. With a commitment to excellence and customer satisfaction, we ensure seamless logistics and timely deliveries for all your shipping needs.",
+    "paragraph2": "We’re not just freight forwarders—we’re your logistics partners. From port to warehouse, from paperwork to the final mile, our team ensures your cargo moves seamlessly, safely, and on time. We pride ourselves on industry knowledge, responsiveness, and a customer-first approach."
+  },
+  "Services": {
+    "heroTitle": "Our Services",
+    "heroSubtitle": "End-to-end supply chain solutions engineered to meet the complex demands of modern global trade.",
+    "subtitle": "Our Core Services",
+    "title": "Comprehensive Logistics Solutions",
+    "description": "We provide end-to-end supply chain services tailored to meet the complex demands of modern global trade.",
+    "cargo_title": "Cargo Transport",
+    "cargo_desc": "Secure and efficient cargo transport services tailored to meet diverse shipping requirements globally.",
+    "customs_title": "Customs Clearance",
+    "customs_desc": "Expert customs brokerage services to ensure smooth compliance and minimize border delays.",
+    "warehousing_title": "Warehousing Solutions",
+    "warehousing_desc": "Secure storage facilities, inventory management, and fulfillment solutions tailored to your needs.",
+    "ocean_title": "Ocean Freight",
+    "ocean_desc": "Reliable FCL and LCL ocean freight solutions connecting major global ports with competitive rates.",
+    "air_title": "Air Freight",
+    "air_desc": "Express and standard air cargo services for time-sensitive international shipments.",
+    "ground_title": "Ground Transportation",
+    "ground_desc": "Extensive domestic and cross-border trucking network ensuring safe delivery to the final destination.",
+    "learn_more": "Learn More"
+  },
+  "Contact": {
+    "title": "Contact Us",
+    "subtitle": "Get in touch with our team for quotes, support, or general inquiries.",
+    "form_title": "Send Us a Message",
+    "first_name": "First Name *",
+    "last_name": "Last Name *",
+    "email": "Email Address *",
+    "phone": "Phone Number",
+    "subject": "Subject *",
+    "topic_default": "Select a topic",
+    "topic_quote": "Request a Quote",
+    "topic_tracking": "Shipment Tracking Issue",
+    "topic_general": "General Inquiry",
+    "message": "Message *",
+    "send_button": "Send Message",
+    "success_title": "Message Sent Successfully!",
+    "success_desc": "Thank you for reaching out. One of our logistics experts will contact you shortly.",
+    "send_another": "Send another message",
+    "hq_title": "Global Headquarters",
+    "office_label": "Office Location",
+    "phone_label": "Phone",
+    "email_label": "Email",
+    "map_placeholder": "Map Integration Area"
+  }
+}

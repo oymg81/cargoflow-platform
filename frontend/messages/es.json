@@ -1,0 +1,77 @@
+{
+  "Navigation": {
+    "home": "Inicio",
+    "services": "Servicios",
+    "about": "Nosotros",
+    "track": "Rastreo",
+    "resources": "Recursos",
+    "contact": "Contacto"
+  },
+  "Hero": {
+    "headline": "Soluciones Integrales de Logística Global",
+    "subheadline": "Servicios confiables de transporte de carga y logística que conectan empresas en todo el mundo.",
+    "cta_track": "Rastrear Envío",
+    "cta_quote": "Solicitar Cotización"
+  },
+  "MissionVision": {
+    "title": "Nuestra Misión y Visión",
+    "mission_title": "Nuestra Misión",
+    "mission_desc": "Proveer soluciones logísticas integrales de clase mundial, gestionando de manera eficiente, segura y transparente cada etapa de la cadena de suministro. Nos comprometemos a ofrecer un servicio ágil, confiable y sin fricciones, permitiendo a nuestros clientes operar con total tranquilidad mientras impulsan el crecimiento de sus negocios.",
+    "vision_title": "Nuestra Visión",
+    "vision_desc": "Consolidarnos como un agente de carga líder a nivel global, reconocido por nuestra excelencia operativa, innovación continua y capacidad de conectar mercados internacionales, generando valor sostenible para nuestros clientes y socios estratégicos."
+  },
+  "AboutUs": {
+    "title": "Sobre Nosotros",
+    "paragraph1": "Logisti-k es una empresa de freight forwarding con sede en Miami, especializada en servicios de transporte de carga. Nuestra misión es brindar soluciones logísticas únicas y eficientes para fabricantes y agencias de mensajería, enfocándonos en ofrecer servicios logísticos integrados. Con un compromiso hacia la excelencia y la satisfacción del cliente, garantizamos operaciones logísticas fluidas y entregas puntuales para todas sus necesidades de envío.",
+    "paragraph2": "No somos solo agentes de carga: somos sus socios logísticos. Desde el puerto hasta el almacén, desde la documentación hasta la entrega final, nuestro equipo garantiza que su carga se mueva de manera eficiente, segura y puntual. Nos destacamos por nuestro conocimiento de la industria, capacidad de respuesta y enfoque centrado en el cliente."
+  },
+  "about": {
+    "title": "Sobre Nosotros",
+    "paragraph1": "Logisti-k es una empresa de freight forwarding con sede en Miami, especializada en servicios de transporte de carga. Nuestra misión es brindar soluciones logísticas únicas y eficientes para fabricantes y agencias de mensajería, enfocándonos en ofrecer servicios logísticos integrados. Con un compromiso hacia la excelencia y la satisfacción del cliente, garantizamos operaciones logísticas fluidas y entregas puntuales para todas sus necesidades de envío.",
+    "paragraph2": "No somos solo agentes de carga: somos sus socios logísticos. Desde el puerto hasta el almacén, desde la documentación hasta la entrega final, nuestro equipo garantiza que su carga se mueva de manera eficiente, segura y puntual. Nos destacamos por nuestro conocimiento de la industria, capacidad de respuesta y enfoque centrado en el cliente."
+  },
+  "Services": {
+    "heroTitle": "Nuestros Servicios",
+    "heroSubtitle": "Soluciones integrales de cadena de suministro diseñadas para satisfacer las demandas complejas del comercio global moderno.",
+    "subtitle": "Nuestros Servicios Principales",
+    "title": "Soluciones Logísticas Integrales",
+    "description": "Ofrecemos servicios integrales de cadena de suministro adaptados para satisfacer las demandas complejas del comercio global moderno.",
+    "cargo_title": "Transporte de Carga",
+    "cargo_desc": "Servicios seguros y eficientes de transporte de carga adaptados a diversas necesidades de envío a nivel global.",
+    "customs_title": "Despacho de Aduanas",
+    "customs_desc": "Servicios expertos de gestión aduanera para garantizar el cumplimiento normativo y minimizar retrasos fronterizos.",
+    "warehousing_title": "Soluciones de Almacenamiento",
+    "warehousing_desc": "Instalaciones de almacenamiento seguras, gestión de inventario y soluciones de cumplimiento adaptadas a sus necesidades.",
+    "ocean_title": "Flete Marítimo",
+    "ocean_desc": "Soluciones confiables de flete marítimo FCL y LCL que conectan los principales puertos mundiales con tarifas competitivas.",
+    "air_title": "Flete Aéreo",
+    "air_desc": "Servicios de carga aérea exprés y estándar para envíos internacionales urgentes.",
+    "ground_title": "Transporte Terrestre",
+    "ground_desc": "Amplia red de transporte terrestre nacional y transfronterizo que garantiza la entrega segura en el destino final.",
+    "learn_more": "Más Información"
+  },
+  "Contact": {
+    "title": "Contáctenos",
+    "subtitle": "Póngase en contacto con nuestro equipo para cotizaciones, soporte o consultas generales.",
+    "form_title": "Envíenos un Mensaje",
+    "first_name": "Nombre *",
+    "last_name": "Apellido *",
+    "email": "Correo Electrónico *",
+    "phone": "Número de Teléfono",
+    "subject": "Asunto *",
+    "topic_default": "Seleccione un tema",
+    "topic_quote": "Solicitar una Cotización",
+    "topic_tracking": "Problema de Rastreo de Envío",
+    "topic_general": "Consulta General",
+    "message": "Mensaje *",
+    "send_button": "Enviar Mensaje",
+    "success_title": "¡Mensaje Enviado con Éxito!",
+    "success_desc": "Gracias por comunicarse. Uno de nuestros expertos en logística se pondrá en contacto con usted en breve.",
+    "send_another": "Enviar otro mensaje",
+    "hq_title": "Sede Global",
+    "office_label": "Ubicación de la Oficina",
+    "phone_label": "Teléfono",
+    "email_label": "Correo Electrónico",
+    "map_placeholder": "Área de Integración de Mapa"
+  }
+}
