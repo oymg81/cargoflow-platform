@@ -46,13 +46,13 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <section className="py-24 bg-white dark:bg-neutral-dark">
+      <section className="py-24 bg-[#E10600]">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
             
             {/* Contact Form */}
             <div>
-              <h2 className="text-3xl font-bold text-neutral-dark dark:text-white mb-8">
+              <h2 className="text-3xl font-bold text-black mb-8">
                 {t('form_title')}
               </h2>
               
@@ -71,7 +71,7 @@ export default function ContactPage() {
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
-                      <label className="block text-sm font-medium text-neutral-dark dark:text-neutral-300 mb-2">
+                      <label className="block text-sm font-medium text-black mb-2">
                         {t('first_name')}
                       </label>
                       <input 
@@ -82,7 +82,7 @@ export default function ContactPage() {
                       />
                     </div>
                     <div>
-                      <label className="block text-sm font-medium text-neutral-dark dark:text-neutral-300 mb-2">
+                      <label className="block text-sm font-medium text-black mb-2">
                         {t('last_name')}
                       </label>
                       <input 
@@ -96,7 +96,7 @@ export default function ContactPage() {
                   
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
-                      <label className="block text-sm font-medium text-neutral-dark dark:text-neutral-300 mb-2">
+                      <label className="block text-sm font-medium text-black mb-2">
                         {t('email')}
                       </label>
                       <input 
@@ -107,7 +107,7 @@ export default function ContactPage() {
                       />
                     </div>
                     <div>
-                      <label className="block text-sm font-medium text-neutral-dark dark:text-neutral-300 mb-2">
+                      <label className="block text-sm font-medium text-black mb-2">
                         {t('phone')}
                       </label>
                       <input 
@@ -164,30 +164,30 @@ export default function ContactPage() {
             {/* Contact Information & Map */}
             <div>
               <div className="bg-neutral-light dark:bg-neutral-800/50 p-8 rounded-xl border border-neutral-200 dark:border-neutral-700 mb-8">
-                <h3 className="text-2xl font-bold text-neutral-dark dark:text-white mb-6">{t('hq_title')}</h3>
+                <h3 className="text-2xl font-bold text-black mb-6">{t('hq_title')}</h3>
                 
                 <ul className="space-y-6">
-                  <li className="flex items-start gap-4 text-neutral-dark dark:text-neutral-300">
+                  <li className="flex items-start gap-4 text-black">
                     <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center shrink-0">
-                      <MapPin className="text-primary" size={24} />
+                      <MapPin className="text-white" size={24} />
                     </div>
                     <div>
                       <p className="font-bold text-lg mb-1">{t('office_label')}</p>
                       <p>1234 Logistics Blvd, Suite 100<br/>Miami, FL 33122, USA</p>
                     </div>
                   </li>
-                  <li className="flex items-start gap-4 text-neutral-dark dark:text-neutral-300">
+                  <li className="flex items-start gap-4 text-black">
                     <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center shrink-0">
-                      <Phone className="text-primary" size={24} />
+                      <Phone className="text-white" size={24} />
                     </div>
                     <div>
                       <p className="font-bold text-lg mb-1">{t('phone_label')}</p>
                       <a href="tel:+18001234567" className="hover:text-primary transition-colors">+1 (800) 123-4567</a>
                     </div>
                   </li>
-                  <li className="flex items-start gap-4 text-neutral-dark dark:text-neutral-300">
+                  <li className="flex items-start gap-4 text-black">
                     <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center shrink-0">
-                      <Mail className="text-primary" size={24} />
+                      <Mail className="text-white" size={24} />
                     </div>
                     <div>
                       <p className="font-bold text-lg mb-1">{t('email_label')}</p>
