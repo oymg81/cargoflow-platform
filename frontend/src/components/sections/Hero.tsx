@@ -49,12 +49,15 @@ export default function Hero() {
               </p>
               
               <div className="flex flex-col sm:flex-row items-center gap-4">
-                <Link 
-                  href="/contact" 
+                <button 
+                  onClick={(e) => {
+                    e.preventDefault();
+                    document.getElementById('quote-section')?.scrollIntoView({ behavior: 'smooth' });
+                  }}
                   className="w-full sm:w-auto bg-gradient-to-r from-[#F05A28] to-[#E63946] hover:shadow-lg hover:shadow-[#F05A28]/30 hover:-translate-y-0.5 text-white px-8 py-4 rounded-full font-bold text-lg transition-all flex items-center justify-center gap-2"
                 >
                   {t('cta_quote')}
-                </Link>
+                </button>
                 
                 <Link 
                   href="/track" 

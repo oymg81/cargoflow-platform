@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 
 export default function Cta() {
   return (
-    <section className="py-24 bg-white relative overflow-hidden">
+    <section id="quote-section" className="py-24 bg-white relative overflow-hidden">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

@@ -46,7 +46,7 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <section className="py-24 bg-[#E10600]">
+      <section id="contact-form" className="py-24 bg-[#E10600]">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
             
@@ -78,7 +78,7 @@ export default function ContactPage() {
                         type="text" 
                         name="firstName"
                         required
-                        className="w-full bg-neutral-light dark:bg-neutral-800 border border-neutral-300 dark:border-neutral-700 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary"
+                        className="w-full bg-white text-black border border-transparent rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-black placeholder-neutral-400"
                       />
                     </div>
                     <div>
@@ -89,7 +89,7 @@ export default function ContactPage() {
                         type="text" 
                         name="lastName"
                         required
-                        className="w-full bg-neutral-light dark:bg-neutral-800 border border-neutral-300 dark:border-neutral-700 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary"
+                        className="w-full bg-white text-black border border-transparent rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-black placeholder-neutral-400"
                       />
                     </div>
                   </div>
@@ -103,7 +103,7 @@ export default function ContactPage() {
                         type="email" 
                         name="email"
                         required
-                        className="w-full bg-neutral-light dark:bg-neutral-800 border border-neutral-300 dark:border-neutral-700 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary"
+                        className="w-full bg-white text-black border border-transparent rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-black placeholder-neutral-400"
                       />
                     </div>
                     <div>
@@ -113,19 +113,19 @@ export default function ContactPage() {
                       <input 
                         type="tel" 
                         name="phone"
-                        className="w-full bg-neutral-light dark:bg-neutral-800 border border-neutral-300 dark:border-neutral-700 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary"
+                        className="w-full bg-white text-black border border-transparent rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-black placeholder-neutral-400"
                       />
                     </div>
                   </div>
 
                   <div>
-                    <label className="block text-sm font-medium text-neutral-dark dark:text-neutral-300 mb-2">
+                    <label className="block text-sm font-medium text-black mb-2">
                       {t('subject')}
                     </label>
                     <select 
                       name="subject"
                       required
-                      className="w-full bg-neutral-light dark:bg-neutral-800 border border-neutral-300 dark:border-neutral-700 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary"
+                      className="w-full bg-white text-black border border-transparent rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-black"
                     >
                       <option value="">{t('topic_default')}</option>
                       <option value="quote">{t('topic_quote')}</option>
@@ -135,21 +135,21 @@ export default function ContactPage() {
                   </div>
 
                   <div>
-                    <label className="block text-sm font-medium text-neutral-dark dark:text-neutral-300 mb-2">
+                    <label className="block text-sm font-medium text-black mb-2">
                       {t('message')}
                     </label>
                     <textarea 
                       name="message"
                       required
                       rows={5}
-                      className="w-full bg-neutral-light dark:bg-neutral-800 border border-neutral-300 dark:border-neutral-700 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary resize-none"
+                      className="w-full bg-white text-black border border-transparent rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-black resize-none placeholder-neutral-400"
                     ></textarea>
                   </div>
 
                   <button 
                     type="submit" 
                     disabled={status === 'loading'}
-                    className="w-full bg-primary hover:bg-primary-dark text-white font-bold py-4 px-8 rounded-md transition-colors disabled:opacity-70 disabled:cursor-not-allowed flex items-center justify-center"
+                    className="w-full bg-black hover:bg-neutral-900 text-white font-bold py-4 px-8 rounded-md transition-all disabled:opacity-70 disabled:cursor-not-allowed flex items-center justify-center shadow-lg hover:shadow-xl hover:-translate-y-0.5"
                   >
                     {status === 'loading' ? (
                       <span className="animate-spin rounded-full h-5 w-5 border-b-2 border-white"></span>
@@ -163,7 +163,7 @@ export default function ContactPage() {
 
             {/* Contact Information & Map */}
             <div>
-              <div className="bg-neutral-light dark:bg-neutral-800/50 p-8 rounded-xl border border-neutral-200 dark:border-neutral-700 mb-8">
+              <div className="bg-white p-8 rounded-xl shadow-lg mb-8">
                 <h3 className="text-2xl font-bold text-black mb-6">{t('hq_title')}</h3>
                 
                 <ul className="space-y-6">
