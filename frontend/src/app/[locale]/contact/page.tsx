@@ -168,7 +168,7 @@ export default function ContactPage() {
                 
                 <ul className="space-y-6">
                   <li className="flex items-start gap-4 text-black">
-                    <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center shrink-0">
+                    <div className="w-12 h-12 bg-[#C00000] rounded-full flex items-center justify-center shrink-0">
                       <MapPin className="text-white" size={24} />
                     </div>
                     <div>
@@ -177,7 +177,7 @@ export default function ContactPage() {
                     </div>
                   </li>
                   <li className="flex items-start gap-4 text-black">
-                    <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center shrink-0">
+                    <div className="w-12 h-12 bg-[#C00000] rounded-full flex items-center justify-center shrink-0">
                       <Phone className="text-white" size={24} />
                     </div>
                     <div>
@@ -186,7 +186,7 @@ export default function ContactPage() {
                     </div>
                   </li>
                   <li className="flex items-start gap-4 text-black">
-                    <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center shrink-0">
+                    <div className="w-12 h-12 bg-[#C00000] rounded-full flex items-center justify-center shrink-0">
                       <Mail className="text-white" size={24} />
                     </div>
                     <div>
@@ -197,12 +197,17 @@ export default function ContactPage() {
                 </ul>
               </div>
 
-              {/* Embedded Map Placeholder */}
-              <div className="w-full h-[300px] bg-neutral-200 dark:bg-neutral-800 rounded-xl flex items-center justify-center text-neutral-500 overflow-hidden relative">
-                <div className="absolute inset-0 bg-[url('https://maps.gstatic.com/mapfiles/maps_lite/images/2x/map_lite_2.png')] opacity-50 bg-cover bg-center"></div>
-                <div className="z-10 bg-white dark:bg-neutral-900 p-4 rounded-lg shadow-lg">
-                  {t('map_placeholder')}
-                </div>
+              <div className="w-full h-[300px] bg-white rounded-xl overflow-hidden shadow-lg border border-neutral-200">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114964.38942361205!2d-80.3118606439008!3d25.78254531062972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b0a20ec8c111%3A0xff96f271ddad4f65!2sMiami%2C%20FL!5e0!3m2!1sen!2sus!4v1715560000000!5m2!1sen!2sus"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen={false}
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Logisti-K Location"
+                ></iframe>
               </div>
             </div>
 
