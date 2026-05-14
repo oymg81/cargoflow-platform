@@ -6,6 +6,7 @@ import Services from '@/components/sections/Services';
 import TrackingPreview from '@/components/sections/TrackingPreview';
 import Testimonials from '@/components/sections/Testimonials';
 import Cta from '@/components/sections/Cta';
+import CustomerPortal from '@/components/sections/CustomerPortal';
 
 export default function HomePage() {
   return (
@@ -16,6 +17,7 @@ export default function HomePage() {
       <MissionVision />
       <Services />
       <TrackingPreview />
+      <CustomerPortal />
       <Testimonials />
       <Cta />
       

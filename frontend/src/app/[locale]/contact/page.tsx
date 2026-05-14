@@ -46,13 +46,13 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <section id="contact-form" className="py-24 bg-[#E10600]">
+      <section id="contact-form" className="py-24 bg-white">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
             
             {/* Contact Form */}
-            <div>
-              <h2 className="text-3xl font-bold text-black mb-8">
+            <div className="bg-white p-8 md:p-10 rounded-2xl shadow-xl border border-neutral-100">
+              <h2 className="text-3xl font-bold text-[#07142b] mb-8">
                 {t('form_title')}
               </h2>
               
@@ -71,61 +71,61 @@ export default function ContactPage() {
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
-                      <label className="block text-sm font-medium text-black mb-2">
+                      <label className="block text-sm font-semibold text-neutral-700 mb-2">
                         {t('first_name')}
                       </label>
                       <input 
                         type="text" 
                         name="firstName"
                         required
-                        className="w-full bg-white text-black border border-transparent rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-black placeholder-neutral-400"
+                        className="w-full bg-neutral-50 text-[#07142b] border border-neutral-200 rounded-lg px-4 py-3 focus:outline-none focus:border-[#F05A28] focus:ring-1 focus:ring-[#F05A28] transition-colors placeholder-neutral-400"
                       />
                     </div>
                     <div>
-                      <label className="block text-sm font-medium text-black mb-2">
+                      <label className="block text-sm font-semibold text-neutral-700 mb-2">
                         {t('last_name')}
                       </label>
                       <input 
                         type="text" 
                         name="lastName"
                         required
-                        className="w-full bg-white text-black border border-transparent rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-black placeholder-neutral-400"
+                        className="w-full bg-neutral-50 text-[#07142b] border border-neutral-200 rounded-lg px-4 py-3 focus:outline-none focus:border-[#F05A28] focus:ring-1 focus:ring-[#F05A28] transition-colors placeholder-neutral-400"
                       />
                     </div>
                   </div>
                   
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
-                      <label className="block text-sm font-medium text-black mb-2">
+                      <label className="block text-sm font-semibold text-neutral-700 mb-2">
                         {t('email')}
                       </label>
                       <input 
                         type="email" 
                         name="email"
                         required
-                        className="w-full bg-white text-black border border-transparent rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-black placeholder-neutral-400"
+                        className="w-full bg-neutral-50 text-[#07142b] border border-neutral-200 rounded-lg px-4 py-3 focus:outline-none focus:border-[#F05A28] focus:ring-1 focus:ring-[#F05A28] transition-colors placeholder-neutral-400"
                       />
                     </div>
                     <div>
-                      <label className="block text-sm font-medium text-black mb-2">
+                      <label className="block text-sm font-semibold text-neutral-700 mb-2">
                         {t('phone')}
                       </label>
                       <input 
                         type="tel" 
                         name="phone"
-                        className="w-full bg-white text-black border border-transparent rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-black placeholder-neutral-400"
+                        className="w-full bg-neutral-50 text-[#07142b] border border-neutral-200 rounded-lg px-4 py-3 focus:outline-none focus:border-[#F05A28] focus:ring-1 focus:ring-[#F05A28] transition-colors placeholder-neutral-400"
                       />
                     </div>
                   </div>
 
                   <div>
-                    <label className="block text-sm font-medium text-black mb-2">
+                    <label className="block text-sm font-semibold text-neutral-700 mb-2">
                       {t('subject')}
                     </label>
                     <select 
                       name="subject"
                       required
-                      className="w-full bg-white text-black border border-transparent rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-black"
+                      className="w-full bg-neutral-50 text-[#07142b] border border-neutral-200 rounded-lg px-4 py-3 focus:outline-none focus:border-[#F05A28] focus:ring-1 focus:ring-[#F05A28] transition-colors appearance-none"
                     >
                       <option value="">{t('topic_default')}</option>
                       <option value="quote">{t('topic_quote')}</option>
@@ -135,21 +135,21 @@ export default function ContactPage() {
                   </div>
 
                   <div>
-                    <label className="block text-sm font-medium text-black mb-2">
+                    <label className="block text-sm font-semibold text-neutral-700 mb-2">
                       {t('message')}
                     </label>
                     <textarea 
                       name="message"
                       required
                       rows={5}
-                      className="w-full bg-white text-black border border-transparent rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-black resize-none placeholder-neutral-400"
+                      className="w-full bg-neutral-50 text-[#07142b] border border-neutral-200 rounded-lg px-4 py-3 focus:outline-none focus:border-[#F05A28] focus:ring-1 focus:ring-[#F05A28] transition-colors resize-none placeholder-neutral-400"
                     ></textarea>
                   </div>
 
                   <button 
                     type="submit" 
                     disabled={status === 'loading'}
-                    className="w-full bg-black hover:bg-neutral-900 text-white font-bold py-4 px-8 rounded-md transition-all disabled:opacity-70 disabled:cursor-not-allowed flex items-center justify-center shadow-lg hover:shadow-xl hover:-translate-y-0.5"
+                    className="w-full bg-[#1E293B] hover:bg-[#334155] text-white font-bold py-4 px-8 rounded-lg transition-all disabled:opacity-70 disabled:cursor-not-allowed flex items-center justify-center shadow-md hover:shadow-lg hover:-translate-y-0.5"
                   >
                     {status === 'loading' ? (
                       <span className="animate-spin rounded-full h-5 w-5 border-b-2 border-white"></span>
@@ -163,41 +163,41 @@ export default function ContactPage() {
 
             {/* Contact Information & Map */}
             <div>
-              <div className="bg-white p-8 rounded-xl shadow-lg mb-8">
-                <h3 className="text-2xl font-bold text-black mb-6">{t('hq_title')}</h3>
+              <div className="bg-neutral-50 p-8 rounded-2xl border border-neutral-100 shadow-sm mb-8">
+                <h3 className="text-2xl font-bold text-[#07142b] mb-6">{t('hq_title')}</h3>
                 
                 <ul className="space-y-6">
-                  <li className="flex items-start gap-4 text-black">
-                    <div className="w-12 h-12 bg-[#C00000] rounded-full flex items-center justify-center shrink-0">
-                      <MapPin className="text-white" size={24} />
+                  <li className="flex items-start gap-4 text-[#07142b]">
+                    <div className="w-12 h-12 bg-red-50 rounded-xl flex items-center justify-center shrink-0">
+                      <MapPin className="text-[#F05A28]" size={24} />
                     </div>
                     <div>
-                      <p className="font-bold text-lg mb-1">{t('office_label')}</p>
-                      <p>1234 Logistics Blvd, Suite 100<br/>Miami, FL 33122, USA</p>
+                      <p className="font-bold text-lg mb-1 text-[#07142b]">{t('office_label')}</p>
+                      <p className="text-neutral-600">1234 Logistics Blvd, Suite 100<br/>Miami, FL 33122, USA</p>
                     </div>
                   </li>
-                  <li className="flex items-start gap-4 text-black">
-                    <div className="w-12 h-12 bg-[#C00000] rounded-full flex items-center justify-center shrink-0">
-                      <Phone className="text-white" size={24} />
+                  <li className="flex items-start gap-4 text-[#07142b]">
+                    <div className="w-12 h-12 bg-red-50 rounded-xl flex items-center justify-center shrink-0">
+                      <Phone className="text-[#F05A28]" size={24} />
                     </div>
                     <div>
-                      <p className="font-bold text-lg mb-1">{t('phone_label')}</p>
-                      <a href="tel:+18001234567" className="hover:text-primary transition-colors">+1 (800) 123-4567</a>
+                      <p className="font-bold text-lg mb-1 text-[#07142b]">{t('phone_label')}</p>
+                      <a href="tel:+18001234567" className="text-neutral-600 hover:text-[#F05A28] transition-colors">+1 (800) 123-4567</a>
                     </div>
                   </li>
-                  <li className="flex items-start gap-4 text-black">
-                    <div className="w-12 h-12 bg-[#C00000] rounded-full flex items-center justify-center shrink-0">
-                      <Mail className="text-white" size={24} />
+                  <li className="flex items-start gap-4 text-[#07142b]">
+                    <div className="w-12 h-12 bg-red-50 rounded-xl flex items-center justify-center shrink-0">
+                      <Mail className="text-[#F05A28]" size={24} />
                     </div>
                     <div>
-                      <p className="font-bold text-lg mb-1">{t('email_label')}</p>
-                      <a href="mailto:info@logisti-k.us" className="hover:text-primary transition-colors">info@logisti-k.us</a>
+                      <p className="font-bold text-lg mb-1 text-[#07142b]">{t('email_label')}</p>
+                      <a href="mailto:info@logisti-k.us" className="text-neutral-600 hover:text-[#F05A28] transition-colors">info@logisti-k.us</a>
                     </div>
                   </li>
                 </ul>
               </div>
 
-              <div className="w-full h-[300px] bg-white rounded-xl overflow-hidden shadow-lg border border-neutral-200">
+              <div className="w-full h-[300px] bg-white rounded-2xl overflow-hidden shadow-sm border border-neutral-200">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114964.38942361205!2d-80.3118606439008!3d25.78254531062972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b0a20ec8c111%3A0xff96f271ddad4f65!2sMiami%2C%20FL!5e0!3m2!1sen!2sus!4v1715560000000!5m2!1sen!2sus"
                   width="100%"

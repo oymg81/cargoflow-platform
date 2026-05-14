@@ -4,7 +4,7 @@ import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/routing';
 import Image from 'next/image';
 import LanguageSwitcher from '../LanguageSwitcher';
-import { Menu, X, ChevronDown, ArrowRight, Phone } from 'lucide-react';
+import { Menu, X, ChevronDown, ArrowRight, Phone, ExternalLink } from 'lucide-react';
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -60,9 +60,9 @@ export default function Navbar() {
         <div className="flex items-center gap-4 xl:gap-6 shrink-0">
           <LanguageSwitcher />
           
-          <Link href="/signin" className="hidden xl:flex items-center gap-2 bg-gradient-to-r from-[#F05A28] to-[#E63946] hover:shadow-lg hover:shadow-[#F05A28]/30 hover:-translate-y-0.5 text-white px-6 py-2.5 rounded-full font-bold transition-all whitespace-nowrap">
-            Sign In
-          </Link>
+          <a href="https://logisti-k.managercargo.com/public/login/indexlogin/logincasillero" target="_blank" rel="noopener noreferrer" className="hidden xl:flex items-center gap-2 bg-gradient-to-r from-[#F05A28] to-[#E63946] hover:shadow-lg hover:shadow-[#F05A28]/30 hover:-translate-y-0.5 text-white px-6 py-2.5 rounded-full font-bold transition-all whitespace-nowrap">
+            Sign In <ExternalLink size={16} />
+          </a>
 
           {/* Mobile Menu Toggle */}
           <button 
@@ -95,13 +95,15 @@ export default function Navbar() {
                 </Link>
               ))}
               <div className="flex flex-col gap-4 mt-4 pt-4 border-t border-neutral-100">
-                <Link 
-                href="/signin" 
+                <a 
+                href="https://logisti-k.managercargo.com/public/login/indexlogin/logincasillero" 
+                target="_blank"
+                rel="noopener noreferrer"
                 onClick={() => setIsOpen(false)}
-                className="bg-gradient-to-r from-[#F05A28] to-[#E63946] text-white text-center py-4 rounded-xl font-bold shadow-lg"
+                className="bg-gradient-to-r from-[#F05A28] to-[#E63946] text-white text-center py-4 rounded-xl font-bold shadow-lg flex items-center justify-center gap-2"
               >
-                Sign In
-              </Link>
+                Sign In <ExternalLink size={20} />
+              </a>
               </div>
             </nav>
           </motion.div>

@@ -52,7 +52,7 @@ export default function Hero() {
                 <button 
                   onClick={(e) => {
                     e.preventDefault();
-                    document.getElementById('quote-section')?.scrollIntoView({ behavior: 'smooth' });
+                    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
                   }}
                   className="w-full sm:w-auto bg-gradient-to-r from-[#F05A28] to-[#E63946] hover:shadow-lg hover:shadow-[#F05A28]/30 hover:-translate-y-0.5 text-white px-8 py-4 rounded-full font-bold text-lg transition-all flex items-center justify-center gap-2"
                 >
@@ -61,9 +61,9 @@ export default function Hero() {
                 
                 <Link 
                   href="/track" 
-                  className="w-full sm:w-auto bg-white hover:bg-gray-100 text-[#07142b] px-8 py-4 rounded-full font-bold text-lg transition-all flex items-center justify-center gap-2 shadow-lg"
+                  className="w-full sm:w-auto bg-[#1E293B] hover:bg-[#334155] text-white px-8 py-4 rounded-full font-bold text-lg transition-all flex items-center justify-center gap-2 shadow-lg hover:shadow-xl hover:shadow-[#1E293B]/30"
                 >
-                  <PackageSearch size={20} />
+                  <PackageSearch size={20} className="text-white" />
                   {t('cta_track')}
                 </Link>
               </div>
