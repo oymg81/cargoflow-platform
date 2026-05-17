@@ -37,7 +37,7 @@ export default function Hero() {
             >
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-red-50 text-[#F05A28] font-bold text-sm uppercase tracking-wider mb-8 border border-red-100">
                 <span className="w-2 h-2 rounded-full bg-[#F05A28] animate-pulse"></span>
-                Global Freight Solutions
+                {t('tag')}
               </div>
               
               <h1 className="text-4xl sm:text-5xl lg:text-[3.5rem] font-bold text-white leading-[1.15] mb-6 tracking-tight">

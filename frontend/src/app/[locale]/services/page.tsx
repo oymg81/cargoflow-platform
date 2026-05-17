@@ -34,18 +34,18 @@ export default function ServicesPage() {
       <section className="py-24 bg-white border-y border-gray-100">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-primary font-semibold tracking-wider uppercase mb-3">Our Process</h2>
+            <h2 className="text-primary font-semibold tracking-wider uppercase mb-3">{t('process_subtitle')}</h2>
             <h3 className="text-3xl md:text-4xl font-bold text-[#07142b] mb-6">
-              How We Move Your Freight
+              {t('process_title')}
             </h3>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             {[
-              { step: '01', title: 'Consultation', desc: 'We analyze your requirements and design the optimal route.' },
-              { step: '02', title: 'Booking', desc: 'Secure capacity and finalize all documentation.' },
-              { step: '03', title: 'Transit', desc: 'Your cargo is moved with real-time tracking visibility.' },
-              { step: '04', title: 'Delivery', desc: 'Final mile delivery and customs clearance completed.' },
+              { step: '01', title: t('process_step1_title'), desc: t('process_step1_desc') },
+              { step: '02', title: t('process_step2_title'), desc: t('process_step2_desc') },
+              { step: '03', title: t('process_step3_title'), desc: t('process_step3_desc') },
+              { step: '04', title: t('process_step4_title'), desc: t('process_step4_desc') },
             ].map((item, i) => (
               <div key={i} className="text-center">
                 <div className="w-16 h-16 rounded-full bg-primary/10 text-primary flex items-center justify-center text-2xl font-bold mx-auto mb-6">

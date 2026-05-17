@@ -4,7 +4,11 @@ import { Link } from '@/i18n/routing';
 import { ArrowRight, Phone } from 'lucide-react';
 import { motion } from 'framer-motion';
 
+import { useTranslations } from 'next-intl';
+
 export default function Cta() {
+  const t = useTranslations('Cta');
+
   return (
     <section id="contact" className="py-24 bg-white relative overflow-hidden">
       <div className="container mx-auto px-4">
@@ -20,10 +24,10 @@ export default function Cta() {
 
           <div className="relative z-10 text-center lg:text-left max-w-2xl lg:ml-12">
             <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">
-              Ready to Ship with Confidence?
+              {t('title')}
             </h2>
             <p className="text-lg md:text-xl text-white/90">
-              Get a personalized quote for your logistics needs today.
+              {t('subtitle')}
             </p>
           </div>
           
@@ -32,14 +36,14 @@ export default function Cta() {
               href="/contact" 
               className="w-full sm:w-auto bg-white text-[#F05A28] hover:bg-neutral-100 px-8 py-4 rounded-full font-bold text-lg transition-colors shadow-lg flex items-center justify-center gap-2"
             >
-              Request a Quote <ArrowRight size={20} />
+              {t('quote_btn')} <ArrowRight size={20} />
             </Link>
             
             <Link 
               href="/contact" 
               className="w-full sm:w-auto bg-transparent border-2 border-white text-white hover:bg-white/10 px-8 py-4 rounded-full font-bold text-lg transition-colors flex items-center justify-center gap-2"
             >
-              Contact Us <ArrowRight size={20} />
+              {t('contact_btn')} <ArrowRight size={20} />
             </Link>
           </div>
         </motion.div>

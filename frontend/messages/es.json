@@ -11,7 +11,8 @@
     "headline": "Soluciones Integrales de Logística Global",
     "subheadline": "Servicios confiables de transporte de carga y logística que conectan empresas en todo el mundo.",
     "cta_track": "Rastrear Envío",
-    "cta_quote": "Solicitar Cotización"
+    "cta_quote": "Solicitar Cotización",
+    "tag": "Soluciones Globales de Carga"
   },
   "MissionVision": {
     "title": "Nuestra Misión y Visión",
@@ -22,11 +23,25 @@
   },
   "AboutUs": {
     "title": "Sobre Nosotros",
+    "heading": "Su Socio de Confianza en Logística Global",
+    "secure_transit": "Tránsito Seguro",
+    "global_reach": "Alcance Global",
+    "port_to_mile": "Puerto a la Última Milla",
+    "years_excellence": "Años de Excelencia",
     "paragraph1": "Logisti-k es una empresa de freight forwarding con sede en Miami, especializada en servicios de transporte de carga. Nuestra misión es brindar soluciones logísticas únicas y eficientes para fabricantes y agencias de mensajería, enfocándonos en ofrecer servicios logísticos integrados. Con un compromiso hacia la excelencia y la satisfacción del cliente, garantizamos operaciones logísticas fluidas y entregas puntuales para todas sus necesidades de envío.",
     "paragraph2": "No somos solo agentes de carga: somos sus socios logísticos. Desde el puerto hasta el almacén, desde la documentación hasta la entrega final, nuestro equipo garantiza que su carga se mueva de manera eficiente, segura y puntual. Nos destacamos por nuestro conocimiento de la industria, capacidad de respuesta y enfoque centrado en el cliente."
   },
   "about": {
     "title": "Sobre Nosotros",
+    "heading": "Su Socio Logístico Global",
+    "years_exp": "Años de Experiencia",
+    "countries": "Países Servidos",
+    "feat1_title": "Precisión",
+    "feat1_desc": "Coordinación y tiempos exactos para cada envío.",
+    "feat2_title": "Eficiencia",
+    "feat2_desc": "Rutas optimizadas para reducir costos y tiempo de tránsito.",
+    "feat3_title": "Asociación",
+    "feat3_desc": "Soporte dedicado y enfoque centrado en el cliente.",
     "paragraph1": "Logisti-k es una empresa de freight forwarding con sede en Miami, especializada en servicios de transporte de carga. Nuestra misión es brindar soluciones logísticas únicas y eficientes para fabricantes y agencias de mensajería, enfocándonos en ofrecer servicios logísticos integrados. Con un compromiso hacia la excelencia y la satisfacción del cliente, garantizamos operaciones logísticas fluidas y entregas puntuales para todas sus necesidades de envío.",
     "paragraph2": "No somos solo agentes de carga: somos sus socios logísticos. Desde el puerto hasta el almacén, desde la documentación hasta la entrega final, nuestro equipo garantiza que su carga se mueva de manera eficiente, segura y puntual. Nos destacamos por nuestro conocimiento de la industria, capacidad de respuesta y enfoque centrado en el cliente."
   },
@@ -48,7 +63,17 @@
     "air_desc": "Servicios de carga aérea exprés y estándar para envíos internacionales urgentes.",
     "ground_title": "Transporte Terrestre",
     "ground_desc": "Amplia red de transporte terrestre nacional y transfronterizo que garantiza la entrega segura en el destino final.",
-    "learn_more": "Más Información"
+    "learn_more": "Más Información",
+    "process_subtitle": "Nuestro Proceso",
+    "process_title": "Cómo Movemos Su Carga",
+    "process_step1_title": "Consulta",
+    "process_step1_desc": "Analizamos sus requisitos y diseñamos la ruta óptima.",
+    "process_step2_title": "Reserva",
+    "process_step2_desc": "Aseguramos capacidad y finalizamos toda la documentación.",
+    "process_step3_title": "Tránsito",
+    "process_step3_desc": "Su carga se mueve con visibilidad de rastreo en tiempo real.",
+    "process_step4_title": "Entrega",
+    "process_step4_desc": "Entrega de última milla y despacho de aduanas completados."
   },
   "Contact": {
     "title": "Contáctenos",
@@ -73,5 +98,53 @@
     "phone_label": "Teléfono",
     "email_label": "Correo Electrónico",
     "map_placeholder": "Área de Integración de Mapa"
+  },
+  "Cta": {
+    "title": "¿Listo para Enviar con Confianza?",
+    "subtitle": "Obtenga una cotización personalizada para sus necesidades logísticas hoy mismo.",
+    "quote_btn": "Solicitar Cotización",
+    "contact_btn": "Contáctenos"
+  },
+  "Footer": {
+    "desc": "Soluciones logísticas globales integradas y servicios de transporte de carga que conectan empresas en todo el mundo con confiabilidad y confianza.",
+    "quick_links": "Enlaces Rápidos",
+    "contact_us": "Contáctenos",
+    "newsletter": "Boletín",
+    "newsletter_desc": "Suscríbase a nuestro boletín para recibir las últimas actualizaciones e información logística.",
+    "privacy": "Política de Privacidad",
+    "terms": "Términos de Servicio",
+    "powered_by": "Desarrollado por CodingSoft Platform",
+    "rights": "LOGISTI-K Freight Services Inc. Todos los derechos reservados."
+  },
+  "TrackingPreview": {
+    "title": "Rastree Su Envío En Tiempo Real",
+    "desc": "Ingrese su número de rastreo de LOGISTI-K o Conocimiento de Embarque (B/L) para obtener actualizaciones instantáneas sobre la ubicación de su carga y la hora estimada de llegada.",
+    "placeholder": "ej. LGTK-123456789",
+    "track_btn": "Rastrear",
+    "empty_state": "Sus resultados de rastreo aparecerán aquí.",
+    "loading": "Localizando envío...",
+    "tracking_number": "Número de Rastreo",
+    "est_delivery": "Entrega Est.",
+    "destination": "Destino",
+    "view_history": "Ver Historial Completo"
+  },
+  "TrackPage": {
+    "title": "Portal de Rastreo",
+    "subtitle": "Visibilidad en tiempo real de su cadena de suministro."
+  },
+  "CustomerPortal": {
+    "title": "Portal de Clientes",
+    "desc": "Acceda a la información de su envío, actualizaciones de rastreo y herramientas de gestión de carga de forma segura a través de nuestro portal logístico integrado.",
+    "access_btn": "Acceder al Portal",
+    "feat1_title": "Rastreo de Envíos",
+    "feat1_desc": "Monitoree su carga en todo el mundo con precisión.",
+    "feat2_title": "Estado de la Carga",
+    "feat2_desc": "Vistas detalladas sobre el manejo y condiciones logísticas.",
+    "feat3_title": "Actualizaciones en Tiempo Real",
+    "feat3_desc": "Notificaciones instantáneas sobre hitos del envío.",
+    "feat4_title": "Panel del Cliente",
+    "feat4_desc": "Portal centralizado para toda su documentación de envío.",
+    "feat5_title": "Acceso Seguro",
+    "feat5_desc": "Seguridad de nivel empresarial protegiendo sus datos logísticos."
   }
 }

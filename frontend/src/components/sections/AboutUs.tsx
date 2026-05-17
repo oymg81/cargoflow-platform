@@ -44,7 +44,7 @@ const fadeUp: Variants = {
                 </h2>
               </div>
               <h3 className="text-4xl lg:text-5xl font-extrabold text-[#07142b] leading-tight">
-                Your Trusted Partner in <span className="text-[#E63946]">Global Logistics</span>
+                {t('heading')}
               </h3>
             </motion.div>
 
@@ -80,7 +80,7 @@ const fadeUp: Variants = {
       <div className="mb-4 w-16 h-16 rounded-full bg-red-50 flex items-center justify-center">
         <ShieldCheck className="text-[#E63946]" size={32} />
       </div>
-      <span className="font-semibold text-[#07142b] text-sm">Secure Transit</span>
+      <span className="font-semibold text-[#07142b] text-sm">{t('secure_transit')}</span>
     </div>
 
     {/* Global Reach */}
@@ -88,7 +88,7 @@ const fadeUp: Variants = {
       <div className="mb-4 w-16 h-16 rounded-full bg-white/10 flex items-center justify-center">
         <Compass className="text-white" size={32} />
       </div>
-      <span className="font-semibold text-white text-sm">Global Reach</span>
+      <span className="font-semibold text-white text-sm">{t('global_reach')}</span>
     </div>
 
     {/* Port to Final Mile */}
@@ -96,7 +96,7 @@ const fadeUp: Variants = {
       <div className="mb-4 w-16 h-16 rounded-full bg-slate-50 flex items-center justify-center">
         <Anchor className="text-[#07142b]" size={32} />
       </div>
-      <span className="font-semibold text-[#07142b] text-sm">Port to Final Mile</span>
+      <span className="font-semibold text-[#07142b] text-sm">{t('port_to_mile')}</span>
     </div>
 
     {/* Years of Excellence */}
@@ -104,7 +104,7 @@ const fadeUp: Variants = {
       <div className="text-[#E63946] font-black text-5xl leading-none mb-3">
         10+
       </div>
-      <span className="font-semibold text-[#07142b] text-sm">Years of Excellence</span>
+      <span className="font-semibold text-[#07142b] text-sm">{t('years_excellence')}</span>
     </div>
   </div>
 </div>

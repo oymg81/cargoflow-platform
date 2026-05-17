@@ -40,7 +40,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
             
             <div className="lg:col-span-7 space-y-8">
               <h2 className="text-3xl md:text-4xl font-bold text-[#07142b] leading-tight">
-                Your Global Logistics <span className="text-[#E63946]">Partner</span>
+                {t('heading')}
               </h2>
               
               <div className="w-20 h-2 bg-[#E63946] rounded-full"></div>
@@ -56,11 +56,11 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
               <div className="grid grid-cols-2 gap-8 pt-8 border-t border-neutral-100">
                 <div>
                   <p className="text-4xl font-black text-[#E63946] mb-2">25+</p>
-                  <p className="font-semibold text-[#07142b]">Years Experience</p>
+                  <p className="font-semibold text-[#07142b]">{t('years_exp')}</p>
                 </div>
                 <div>
                   <p className="text-4xl font-black text-[#E63946] mb-2">150+</p>
-                  <p className="font-semibold text-[#07142b]">Countries Served</p>
+                  <p className="font-semibold text-[#07142b]">{t('countries')}</p>
                 </div>
               </div>
             </div>
@@ -75,8 +75,8 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
                     <Target size={28} />
                   </div>
                   <div>
-                    <h3 className="font-bold text-[#07142b] text-lg mb-1">Precision</h3>
-                    <p className="text-neutral-500 text-sm">Exact timing and coordination for every shipment.</p>
+                    <h3 className="font-bold text-[#07142b] text-lg mb-1">{t('feat1_title')}</h3>
+                    <p className="text-neutral-500 text-sm">{t('feat1_desc')}</p>
                   </div>
                 </div>
 
@@ -85,8 +85,8 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
                     <TrendingUp size={28} />
                   </div>
                   <div>
-                    <h3 className="font-bold text-[#07142b] text-lg mb-1">Efficiency</h3>
-                    <p className="text-neutral-500 text-sm">Optimized routes to reduce cost and transit time.</p>
+                    <h3 className="font-bold text-[#07142b] text-lg mb-1">{t('feat2_title')}</h3>
+                    <p className="text-neutral-500 text-sm">{t('feat2_desc')}</p>
                   </div>
                 </div>
 
@@ -95,8 +95,8 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
                     <Users size={28} />
                   </div>
                   <div>
-                    <h3 className="font-bold text-white text-lg mb-1">Partnership</h3>
-                    <p className="text-neutral-300 text-sm">Dedicated support and customer-first approach.</p>
+                    <h3 className="font-bold text-white text-lg mb-1">{t('feat3_title')}</h3>
+                    <p className="text-neutral-300 text-sm">{t('feat3_desc')}</p>
                   </div>
                 </div>
               </div>

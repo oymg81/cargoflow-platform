@@ -11,7 +11,8 @@
     "headline": "Integrated Global Logistics Solutions for Modern Businesses",
     "subheadline": "Reliable freight forwarding, cargo transport, customs clearance, and warehousing solutions worldwide.",
     "cta_track": "Track Shipment",
-    "cta_quote": "Request a Quote"
+    "cta_quote": "Request a Quote",
+    "tag": "Global Freight Solutions"
   },
   "MissionVision": {
     "title": "Our Mission & Vision",
@@ -22,11 +23,25 @@
   },
   "AboutUs": {
     "title": "About Us",
+    "heading": "Your Trusted Partner in Global Logistics",
+    "secure_transit": "Secure Transit",
+    "global_reach": "Global Reach",
+    "port_to_mile": "Port to Final Mile",
+    "years_excellence": "Years of Excellence",
     "paragraph1": "Logisti-k is a Miami-based freight forwarding company specializing in cargo transportation services. Our mission is to provide unique and efficient logistics solutions to manufacturers and courier agencies, focusing on offering integrated logistics services. With a commitment to excellence and customer satisfaction, we ensure seamless logistics and timely deliveries for all your shipping needs.",
     "paragraph2": "We’re not just freight forwarders—we’re your logistics partners. From port to warehouse, from paperwork to the final mile, our team ensures your cargo moves seamlessly, safely, and on time. We pride ourselves on industry knowledge, responsiveness, and a customer-first approach."
   },
   "about": {
     "title": "About Us",
+    "heading": "Your Global Logistics Partner",
+    "years_exp": "Years Experience",
+    "countries": "Countries Served",
+    "feat1_title": "Precision",
+    "feat1_desc": "Exact timing and coordination for every shipment.",
+    "feat2_title": "Efficiency",
+    "feat2_desc": "Optimized routes to reduce cost and transit time.",
+    "feat3_title": "Partnership",
+    "feat3_desc": "Dedicated support and customer-first approach.",
     "paragraph1": "Logisti-k is a Miami-based freight forwarding company specializing in cargo transportation services. Our mission is to provide unique and efficient logistics solutions to manufacturers and courier agencies, focusing on offering integrated logistics services. With a commitment to excellence and customer satisfaction, we ensure seamless logistics and timely deliveries for all your shipping needs.",
     "paragraph2": "We’re not just freight forwarders—we’re your logistics partners. From port to warehouse, from paperwork to the final mile, our team ensures your cargo moves seamlessly, safely, and on time. We pride ourselves on industry knowledge, responsiveness, and a customer-first approach."
   },
@@ -48,7 +63,17 @@
     "air_desc": "Express and standard air cargo services for time-sensitive international shipments.",
     "ground_title": "Ground Transportation",
     "ground_desc": "Extensive domestic and cross-border trucking network ensuring safe delivery to the final destination.",
-    "learn_more": "Learn More"
+    "learn_more": "Learn More",
+    "process_subtitle": "Our Process",
+    "process_title": "How We Move Your Freight",
+    "process_step1_title": "Consultation",
+    "process_step1_desc": "We analyze your requirements and design the optimal route.",
+    "process_step2_title": "Booking",
+    "process_step2_desc": "Secure capacity and finalize all documentation.",
+    "process_step3_title": "Transit",
+    "process_step3_desc": "Your cargo is moved with real-time tracking visibility.",
+    "process_step4_title": "Delivery",
+    "process_step4_desc": "Final mile delivery and customs clearance completed."
   },
   "Contact": {
     "title": "Contact Us",
@@ -73,5 +98,53 @@
     "phone_label": "Phone",
     "email_label": "Email",
     "map_placeholder": "Map Integration Area"
+  },
+  "Cta": {
+    "title": "Ready to Ship with Confidence?",
+    "subtitle": "Get a personalized quote for your logistics needs today.",
+    "quote_btn": "Request a Quote",
+    "contact_btn": "Contact Us"
+  },
+  "Footer": {
+    "desc": "Integrated global logistics solutions and freight forwarding services connecting businesses worldwide with reliability and trust.",
+    "quick_links": "Quick Links",
+    "contact_us": "Contact Us",
+    "newsletter": "Newsletter",
+    "newsletter_desc": "Subscribe to our newsletter for the latest logistics updates and insights.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "powered_by": "Powered by CodingSoft Platform",
+    "rights": "LOGISTI-K Freight Services Inc. All rights reserved."
+  },
+  "TrackingPreview": {
+    "title": "Track Your Shipment In Real-Time",
+    "desc": "Enter your LOGISTI-K tracking number or Bill of Lading (B/L) to get instant updates on your cargo's location and estimated time of arrival.",
+    "placeholder": "e.g. LGTK-123456789",
+    "track_btn": "Track",
+    "empty_state": "Your tracking results will appear here.",
+    "loading": "Locating shipment...",
+    "tracking_number": "Tracking Number",
+    "est_delivery": "Est. Delivery",
+    "destination": "Destination",
+    "view_history": "View Full History"
+  },
+  "TrackPage": {
+    "title": "Tracking Portal",
+    "subtitle": "Real-time visibility into your supply chain."
+  },
+  "CustomerPortal": {
+    "title": "Customer Portal",
+    "desc": "Access your shipment information, tracking updates, and cargo management tools securely through our integrated logistics portal.",
+    "access_btn": "Access Portal",
+    "feat1_title": "Shipment Tracking",
+    "feat1_desc": "Monitor your cargo across the globe with precision.",
+    "feat2_title": "Cargo Status",
+    "feat2_desc": "Detailed views into logistics handling and conditions.",
+    "feat3_title": "Real-Time Updates",
+    "feat3_desc": "Instant notifications on shipment milestones.",
+    "feat4_title": "Customer Dashboard",
+    "feat4_desc": "Centralized portal for all your shipping documentation.",
+    "feat5_title": "Secure Access",
+    "feat5_desc": "Enterprise-grade security protecting your logistics data."
   }
 }

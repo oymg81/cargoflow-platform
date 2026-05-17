@@ -6,6 +6,7 @@ import FooterNewsletterForm from './FooterNewsletterForm';
 
 export default function Footer() {
   const t = useTranslations('Navigation');
+  const tFooter = useTranslations('Footer');
   const currentYear = new Date().getFullYear();
 
   return (
@@ -24,7 +25,7 @@ export default function Footer() {
               />
             </div>
             <p className="text-gray-600 text-sm leading-relaxed">
-              Integrated global logistics solutions and freight forwarding services connecting businesses worldwide with reliability and trust.
+              {tFooter('desc')}
             </p>
             <div className="flex gap-4 mt-2">
               <a href="#" className="w-10 h-10 rounded-full bg-white border border-gray-200 shadow-sm flex items-center justify-center hover:border-[#F05A28] hover:text-[#F05A28] transition-all text-xs font-bold text-[#07142b] hover:-translate-y-1">
@@ -41,7 +42,7 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-xl font-bold mb-6 text-[#07142b]">Quick Links</h3>
+            <h3 className="text-xl font-bold mb-6 text-[#07142b]">{tFooter('quick_links')}</h3>
             <ul className="flex flex-col gap-3">
               <li>
                 <Link href="/" className="text-gray-600 hover:text-[#F05A28] transition-colors flex items-center gap-2">
@@ -72,7 +73,7 @@ export default function Footer() {
 
           {/* Contact Info */}
           <div>
-            <h3 className="text-xl font-bold mb-6 text-[#07142b]">Contact Us</h3>
+            <h3 className="text-xl font-bold mb-6 text-[#07142b]">{tFooter('contact_us')}</h3>
             <ul className="flex flex-col gap-4">
               <li className="flex items-start gap-3 text-gray-600">
                 <MapPin className="text-[#F05A28] mt-1 shrink-0" size={20} />
@@ -91,9 +92,9 @@ export default function Footer() {
 
           {/* Newsletter */}
           <div>
-            <h3 className="text-xl font-bold mb-6 text-[#07142b]">Newsletter</h3>
+            <h3 className="text-xl font-bold mb-6 text-[#07142b]">{tFooter('newsletter')}</h3>
             <p className="text-gray-600 text-sm mb-4">
-              Subscribe to our newsletter for the latest logistics updates and insights.
+              {tFooter('newsletter_desc')}
             </p>
             <FooterNewsletterForm />
           </div>
@@ -102,14 +103,14 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-gray-200 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-gray-500 text-sm text-center md:text-left">
-            &copy; {currentYear} LOGISTI-K Freight Services Inc. All rights reserved.
+            &copy; {currentYear} {tFooter('rights')}
           </p>
           <div className="flex gap-6 text-sm text-gray-500">
-            <Link href="/privacy" className="hover:text-[#F05A28] transition-colors">Privacy Policy</Link>
-            <Link href="/terms" className="hover:text-[#F05A28] transition-colors">Terms of Service</Link>
+            <Link href="/privacy" className="hover:text-[#F05A28] transition-colors">{tFooter('privacy')}</Link>
+            <Link href="/terms" className="hover:text-[#F05A28] transition-colors">{tFooter('terms')}</Link>
           </div>
           <p className="text-gray-500 text-xs text-center md:text-right mt-2 md:mt-0">
-            Powered by CodingSoft Platform
+            {tFooter('powered_by')}
           </p>
         </div>
       </div>

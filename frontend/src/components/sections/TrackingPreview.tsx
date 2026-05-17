@@ -22,7 +22,7 @@ const MOCK_TRACKING_DATA = {
 };
 
 export default function TrackingPreview() {
-  const t = useTranslations();
+  const t = useTranslations('TrackingPreview');
   const [trackingNumber, setTrackingNumber] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const [result, setResult] = useState<typeof MOCK_TRACKING_DATA | null>(null);
@@ -63,10 +63,10 @@ export default function TrackingPreview() {
           {/* Left Side: Content & Form */}
           <div className="max-w-xl text-[#07142b]">
             <h2 className="text-3xl md:text-5xl font-bold mb-6 leading-tight">
-              Track Your Shipment In Real-Time
+              {t('title')}
             </h2>
             <p className="text-neutral-600 text-lg mb-8 leading-relaxed">
-              Enter your LOGISTI-K tracking number or Bill of Lading (B/L) to get instant updates on your cargo's location and estimated time of arrival.
+              {t('desc')}
             </p>
 
             <form onSubmit={handleTrack} className="flex flex-col sm:flex-row gap-3">
@@ -76,7 +76,7 @@ export default function TrackingPreview() {
                 </div>
                 <input
                   type="text"
-                  placeholder="e.g. LGTK-123456789"
+                  placeholder={t('placeholder')}
                   value={trackingNumber}
                   onChange={(e) => setTrackingNumber(e.target.value)}
                   className="w-full bg-white text-[#07142b] pl-12 pr-4 py-4 rounded-md focus:outline-none focus:ring-2 focus:ring-[#F05A28] shadow-sm text-lg border border-gray-200"
@@ -92,7 +92,7 @@ export default function TrackingPreview() {
                   <span className="animate-spin rounded-full h-5 w-5 border-b-2 border-white"></span>
                 ) : (
                   <>
-                    Track <ArrowRight size={20} />
+                    {t('track_btn')} <ArrowRight size={20} />
                   </>
                 )}
               </button>
@@ -111,7 +111,7 @@ export default function TrackingPreview() {
                   className="text-center flex flex-col items-center justify-center text-neutral-400"
                 >
                   <PackageCheck size={64} className="mb-4 opacity-50" />
-                  <p className="text-lg">Your tracking results will appear here.</p>
+                  <p className="text-lg">{t('empty_state')}</p>
                 </motion.div>
               )}
 
@@ -124,7 +124,7 @@ export default function TrackingPreview() {
                   className="flex flex-col items-center justify-center"
                 >
                   <div className="w-16 h-16 border-4 border-neutral-200 border-t-primary rounded-full animate-spin mb-4"></div>
-                  <p className="text-neutral-500 font-medium">Locating shipment...</p>
+                  <p className="text-neutral-500 font-medium">{t('loading')}</p>
                 </motion.div>
               )}
 
@@ -137,7 +137,7 @@ export default function TrackingPreview() {
                 >
                   <div className="flex justify-between items-start mb-6 pb-6 border-b border-neutral-100">
                     <div>
-                      <p className="text-sm text-neutral-500 font-medium uppercase mb-1">Tracking Number</p>
+                      <p className="text-sm text-neutral-500 font-medium uppercase mb-1">{t('tracking_number')}</p>
                       <p className="text-xl font-bold text-[#07142b] uppercase">{trackingNumber}</p>
                     </div>
                     <div className="text-right">
@@ -151,14 +151,14 @@ export default function TrackingPreview() {
                     <div className="flex items-start gap-3">
                       <Calendar className="text-[#F05A28] mt-0.5" size={20} />
                       <div>
-                        <p className="text-xs text-neutral-500 font-medium uppercase">Est. Delivery</p>
+                        <p className="text-xs text-neutral-500 font-medium uppercase">{t('est_delivery')}</p>
                         <p className="font-semibold text-[#07142b]">{result.eta}</p>
                       </div>
                     </div>
                     <div className="flex items-start gap-3">
                       <MapPin className="text-[#F05A28] mt-0.5" size={20} />
                       <div>
-                        <p className="text-xs text-neutral-500 font-medium uppercase">Destination</p>
+                        <p className="text-xs text-neutral-500 font-medium uppercase">{t('destination')}</p>
                         <p className="font-semibold text-[#07142b]">{result.destination}</p>
                       </div>
                     </div>
@@ -184,7 +184,7 @@ export default function TrackingPreview() {
                   
                   <div className="mt-6 text-center">
                     <button className="text-[#F05A28] font-medium text-sm hover:underline">
-                      View Full History
+                      {t('view_history')}
                     </button>
                   </div>
                 </motion.div>
