@@ -23,6 +23,7 @@ export default function Footer() {
                 height={120} 
                 className="h-28 w-28 object-contain"
               />
+              </div>
             <div className="text-gray-600 text-sm leading-relaxed space-y-4">
               <p className="font-bold text-[#07142b]">
                 {tFooter('legal_entity')}
