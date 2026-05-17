@@ -23,10 +23,27 @@ export default function Footer() {
                 height={120} 
                 className="h-28 w-28 object-contain"
               />
+            <div className="text-gray-600 text-sm leading-relaxed space-y-4">
+              <p className="font-bold text-[#07142b]">
+                {tFooter('legal_entity')}
+              </p>
+              
+              <div>
+                <p className="font-bold text-xs tracking-wider text-[#F05A28] mb-1">{tFooter('hq_label')}</p>
+                <p>2598 E SUNRISE BLVD STE 2104<br />FORT LAUDERDALE, FL 33304</p>
+                <p className="mt-1">{tFooter('phone_label')} <a href="tel:+17869454199" className="hover:text-[#F05A28] transition-colors">+1 (786) 945-4199</a></p>
+              </div>
+
+              <div>
+                <p className="font-bold text-xs tracking-wider text-[#F05A28] mb-1">{tFooter('warehouse_label')}</p>
+                <p>5141 NW 79TH AVE, UNIT 7<br />MIAMI, FL 33166</p>
+              </div>
+
+              <div>
+                <p className="font-bold text-xs tracking-wider text-[#F05A28] mb-1">{tFooter('peru_label')}</p>
+                <p>Av. José Larco 1232, Ste 430<br />Miraflores 15086, Perú</p>
+              </div>
             </div>
-            <p className="text-gray-600 text-sm leading-relaxed">
-              {tFooter('desc')}
-            </p>
             <div className="flex gap-4 mt-2">
               <a href="#" className="w-10 h-10 rounded-full bg-white border border-gray-200 shadow-sm flex items-center justify-center hover:border-[#F05A28] hover:text-[#F05A28] transition-all text-xs font-bold text-[#07142b] hover:-translate-y-1">
                 FB

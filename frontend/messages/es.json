@@ -114,7 +114,12 @@
     "privacy": "Política de Privacidad",
     "terms": "Términos de Servicio",
     "powered_by": "Desarrollado por CodingSoft Platform",
-    "rights": "LOGISTI-K Freight Services Inc. Todos los derechos reservados."
+    "rights": "LOGISTI-K Freight Services Inc. Todos los derechos reservados.",
+    "legal_entity": "LOGISTI-K FREIGHT SERVICES operado por LOGISTICS TWC LLC.",
+    "hq_label": "SEDE PRINCIPAL:",
+    "warehouse_label": "ALMACÉN:",
+    "peru_label": "OFICINA PERÚ:",
+    "phone_label": "Teléfono:"
   },
   "TrackingPreview": {
     "title": "Rastree Su Envío En Tiempo Real",
