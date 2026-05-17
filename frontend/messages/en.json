@@ -116,9 +116,9 @@
     "powered_by": "Powered by CodingSoft Platform",
     "rights": "LOGISTI-K Freight Services Inc. All rights reserved.",
     "legal_entity": "LOGISTI-K FREIGHT SERVICES operated by LOGISTICS TWC LLC.",
-    "hq_label": "HEADQUARTERS:",
-    "warehouse_label": "WAREHOUSE:",
-    "peru_label": "PERÚ OFFICE:",
+    "hq_label": "MIAMI OFFICE",
+    "warehouse_label": "WAREHOUSE",
+    "peru_label": "PERÚ OFFICE",
     "phone_label": "Phone:"
   },
   "TrackingPreview": {
