@@ -1,7 +1,7 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import { Link } from '@/i18n/routing';
+import { Link, usePathname } from '@/i18n/routing';
 import Image from 'next/image';
 import LanguageSwitcher from '../LanguageSwitcher';
 import { Menu, X, ChevronDown, ArrowRight, Phone, ExternalLink } from 'lucide-react';
@@ -11,14 +11,15 @@ import { motion, AnimatePresence } from 'framer-motion';
 export default function Navbar() {
   const t = useTranslations('Navigation');
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
 
   const links = [
-    { href: '/', label: t('home'), active: true },
-    { href: '/services', label: t('services') },
-    { href: '/about', label: t('about') },
-    { href: '/track', label: t('track') },
-    { href: '/resources', label: t('resources'), dropdown: true },
-    { href: '/contact', label: t('contact') },
+    { href: '/', label: t('home'), active: pathname === '/' },
+    { href: '/services', label: t('services'), active: pathname === '/services' },
+    { href: '/about', label: t('about'), active: pathname === '/about' },
+    { href: '/track', label: t('track'), active: pathname === '/track' },
+    { href: '/resources', label: t('resources'), dropdown: true, active: pathname === '/resources' },
+    { href: '/contact', label: t('contact'), active: pathname === '/contact' },
   ];
 
   return (

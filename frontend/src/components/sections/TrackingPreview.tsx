@@ -69,7 +69,7 @@ export default function TrackingPreview() {
               {t('desc')}
             </p>
 
-            <form onSubmit={handleTrack} className="flex flex-col sm:flex-row gap-3">
+            <div className="flex flex-col sm:flex-row gap-3">
               <div className="relative flex-1">
                 <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
                   <PackageSearch className="text-gray-400" size={20} />
@@ -79,24 +79,19 @@ export default function TrackingPreview() {
                   placeholder={t('placeholder')}
                   value={trackingNumber}
                   onChange={(e) => setTrackingNumber(e.target.value)}
-                  className="w-full bg-white text-[#07142b] pl-12 pr-4 py-4 rounded-md focus:outline-none focus:ring-2 focus:ring-[#F05A28] shadow-sm text-lg border border-gray-200"
-                  required
+                  className="w-full bg-white text-[#07142b] pl-12 pr-4 py-4 rounded-md shadow-sm text-lg border border-gray-200"
+                  readOnly
                 />
               </div>
-              <button
-                type="submit"
-                disabled={isLoading}
-                className="bg-primary hover:bg-primary-dark text-white px-8 py-4 rounded-md font-medium text-lg transition-colors flex items-center justify-center gap-2 shadow-lg disabled:opacity-70 disabled:cursor-not-allowed"
+              <a
+                href="https://logisti-k.managercargo.com/public/status/indexstatus/indexstatusacc/wi/si"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-primary hover:bg-primary-dark text-white px-8 py-4 rounded-md font-medium text-lg transition-colors flex items-center justify-center gap-2 shadow-lg w-full sm:w-auto text-center"
               >
-                {isLoading ? (
-                  <span className="animate-spin rounded-full h-5 w-5 border-b-2 border-white"></span>
-                ) : (
-                  <>
-                    {t('track_btn')} <ArrowRight size={20} />
-                  </>
-                )}
-              </button>
-            </form>
+                {t('track_btn')} <ArrowRight size={20} />
+              </a>
+            </div>
           </div>
 
           {/* Right Side: Results UI */}

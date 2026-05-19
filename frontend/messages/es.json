@@ -97,6 +97,10 @@
     "office_label": "Ubicación de la Oficina",
     "phone_label": "Teléfono",
     "email_label": "Correo Electrónico",
+    "miami_office": "Oficina Miami",
+    "warehouse": "Almacén",
+    "peru_office": "Oficina Perú",
+    "phone": "Teléfono",
     "map_placeholder": "Área de Integración de Mapa"
   },
   "Cta": {

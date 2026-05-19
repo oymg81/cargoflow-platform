@@ -161,10 +161,10 @@ export default function ContactPage() {
               )}
             </div>
 
-            {/* Contact Information & Map */}
+            {/* Contact Information */}
             <div>
               <div className="bg-neutral-50 p-8 rounded-2xl border border-neutral-100 shadow-sm mb-8">
-                <h3 className="text-2xl font-bold text-[#07142b] mb-6">{t('hq_title')}</h3>
+                <h3 className="text-2xl font-bold text-[#07142b] mb-6">{t('miami_office')}</h3>
                 
                 <ul className="space-y-6">
                   <li className="flex items-start gap-4 text-[#07142b]">
@@ -173,7 +173,7 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <p className="font-bold text-lg mb-1 text-[#07142b]">{t('office_label')}</p>
-                      <p className="text-neutral-600">1234 Logistics Blvd, Suite 100<br/>Miami, FL 33122, USA</p>
+                      <p className="text-neutral-600">2598 E SUNRISE BLVD STE 2104<br/>FORT LAUDERDALE, FL 33304</p>
                     </div>
                   </li>
                   <li className="flex items-start gap-4 text-[#07142b]">
@@ -181,8 +181,8 @@ export default function ContactPage() {
                       <Phone className="text-[#F05A28]" size={24} />
                     </div>
                     <div>
-                      <p className="font-bold text-lg mb-1 text-[#07142b]">{t('phone_label')}</p>
-                      <a href="tel:+18001234567" className="text-neutral-600 hover:text-[#F05A28] transition-colors">+1 (800) 123-4567</a>
+                      <p className="font-bold text-lg mb-1 text-[#07142b]">{t('phone')}</p>
+                      <a href="tel:+17869454199" className="text-neutral-600 hover:text-[#F05A28] transition-colors">+1 (786) 945-4199</a>
                     </div>
                   </li>
                   <li className="flex items-start gap-4 text-[#07142b]">
@@ -197,8 +197,8 @@ export default function ContactPage() {
                 </ul>
               </div>
 
-              <div className="bg-neutral-50 p-8 rounded-2xl border border-neutral-100 shadow-sm">
-                <h3 className="text-2xl font-bold text-[#07142b] mb-6">Peru Office</h3>
+              <div className="bg-neutral-50 p-8 rounded-2xl border border-neutral-100 shadow-sm mb-8">
+                <h3 className="text-2xl font-bold text-[#07142b] mb-6">{t('warehouse')}</h3>
                 
                 <ul className="space-y-6">
                   <li className="flex items-start gap-4 text-[#07142b]">
@@ -207,25 +207,23 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <p className="font-bold text-lg mb-1 text-[#07142b]">{t('office_label')}</p>
-                      <p className="text-neutral-600">Av. Elmer Faucett 2851<br/>Callao, Peru</p>
+                      <p className="text-neutral-600">5141 NW 79TH AVE, UNIT 7<br/>MIAMI, FL 33166</p>
                     </div>
                   </li>
+                </ul>
+              </div>
+
+              <div className="bg-neutral-50 p-8 rounded-2xl border border-neutral-100 shadow-sm">
+                <h3 className="text-2xl font-bold text-[#07142b] mb-6">{t('peru_office')}</h3>
+                
+                <ul className="space-y-6">
                   <li className="flex items-start gap-4 text-[#07142b]">
                     <div className="w-12 h-12 bg-red-50 rounded-xl flex items-center justify-center shrink-0">
-                      <Phone className="text-[#F05A28]" size={24} />
+                      <MapPin className="text-[#F05A28]" size={24} />
                     </div>
                     <div>
-                      <p className="font-bold text-lg mb-1 text-[#07142b]">{t('phone_label')}</p>
-                      <a href="tel:+5111234567" className="text-neutral-600 hover:text-[#F05A28] transition-colors">+51 (1) 123-4567</a>
-                    </div>
-                  </li>
-                  <li className="flex items-start gap-4 text-[#07142b]">
-                    <div className="w-12 h-12 bg-red-50 rounded-xl flex items-center justify-center shrink-0">
-                      <Mail className="text-[#F05A28]" size={24} />
-                    </div>
-                    <div>
-                      <p className="font-bold text-lg mb-1 text-[#07142b]">{t('email_label')}</p>
-                      <a href="mailto:peru@logisti-k.us" className="text-neutral-600 hover:text-[#F05A28] transition-colors">peru@logisti-k.us</a>
+                      <p className="font-bold text-lg mb-1 text-[#07142b]">{t('office_label')}</p>
+                      <p className="text-neutral-600">Av. José Larco 1232, Ste 430<br/>Miraflores 15086, Perú</p>
                     </div>
                   </li>
                 </ul>

@@ -97,6 +97,10 @@
     "office_label": "Office Location",
     "phone_label": "Phone",
     "email_label": "Email",
+    "miami_office": "Miami Office",
+    "warehouse": "Warehouse",
+    "peru_office": "Peru Office",
+    "phone": "Phone",
     "map_placeholder": "Map Integration Area"
   },
   "Cta": {

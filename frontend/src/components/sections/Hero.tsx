@@ -59,13 +59,15 @@ export default function Hero() {
                   {t('cta_quote')}
                 </button>
                 
-                <Link 
-                  href="/track" 
+                <a 
+                  href="https://logisti-k.managercargo.com/public/status/indexstatus/indexstatusacc/wi/si" 
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-full sm:w-auto bg-[#1E293B] hover:bg-[#334155] text-white px-8 py-4 rounded-full font-bold text-lg transition-all flex items-center justify-center gap-2 shadow-lg hover:shadow-xl hover:shadow-[#1E293B]/30"
                 >
                   <PackageSearch size={20} className="text-white" />
                   {t('cta_track')}
-                </Link>
+                </a>
               </div>
             </motion.div>
           </div>

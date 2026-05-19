@@ -5,6 +5,7 @@ import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
+import GlobalPopup from '@/components/layout/GlobalPopup';
 import "../globals.css";
 
 export const metadata: Metadata = {
@@ -39,6 +40,7 @@ export default async function RootLayout({
           </main>
           <Footer />
         </NextIntlClientProvider>
+        <GlobalPopup />
       </body>
     </html>
   );

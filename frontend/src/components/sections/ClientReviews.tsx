@@ -12,18 +12,19 @@ interface Review {
   rating: number;
 }
 
+import { getApprovedReviews, submitReview } from '@/actions/reviews';
+
 export default function ClientReviews() {
   const [reviews, setReviews] = useState<Review[]>([]);
   const [showForm, setShowForm] = useState(false);
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
 
   useEffect(() => {
-    fetch('http://localhost:8000/api/reviews')
-      .then(res => res.json())
-      .then(data => {
-        if (Array.isArray(data)) setReviews(data);
-      })
-      .catch(err => console.error('Error fetching reviews:', err));
+    async function loadReviews() {
+      const data = await getApprovedReviews();
+      setReviews(data as any);
+    }
+    loadReviews();
   }, []);
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -32,15 +33,17 @@ export default function ClientReviews() {
     
     try {
       const formData = new FormData(e.target as HTMLFormElement);
-      const data = Object.fromEntries(formData.entries());
+      const data = {
+        quote: formData.get('quote') as string,
+        author: formData.get('author') as string,
+        role: formData.get('role') as string,
+        company: formData.get('company') as string,
+        rating: Number(formData.get('rating'))
+      };
       
-      const res = await fetch('http://localhost:8000/api/reviews', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(data)
-      });
+      const res = await submitReview(data);
       
-      if (res.ok) {
+      if (res.success) {
         setStatus('success');
         setTimeout(() => {
           setShowForm(false);
