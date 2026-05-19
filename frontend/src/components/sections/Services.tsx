@@ -106,13 +106,7 @@ export default function Services() {
                 {service.description}
               </p>
               
-              <Link 
-                href="/services" 
-                className="inline-flex items-center text-primary font-medium hover:text-primary-dark transition-colors"
-              >
-                {t('learn_more')} 
-                <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
-              </Link>
+
             </motion.div>
           ))}
         </motion.div>

@@ -18,7 +18,6 @@ export default function Navbar() {
     { href: '/services', label: t('services'), active: pathname === '/services' },
     { href: '/about', label: t('about'), active: pathname === '/about' },
     { href: '/track', label: t('track'), active: pathname === '/track' },
-    { href: '/resources', label: t('resources'), dropdown: true, active: pathname === '/resources' },
     { href: '/contact', label: t('contact'), active: pathname === '/contact' },
   ];
 
