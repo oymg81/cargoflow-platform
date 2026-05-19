@@ -1,10 +1,10 @@
 import Hero from '@/components/sections/Hero';
-import TrustedPartners from '@/components/sections/TrustedPartners';
+import ClientReviews from '@/components/sections/ClientReviews';
 import AboutUs from '@/components/sections/AboutUs';
 import MissionVision from '@/components/sections/MissionVision';
 import Services from '@/components/sections/Services';
 import TrackingPreview from '@/components/sections/TrackingPreview';
-import Testimonials from '@/components/sections/Testimonials';
+
 import Cta from '@/components/sections/Cta';
 import CustomerPortal from '@/components/sections/CustomerPortal';
 
@@ -12,13 +12,13 @@ export default function HomePage() {
   return (
     <>
       <Hero />
-      <TrustedPartners />
+      <ClientReviews />
       <AboutUs />
       <MissionVision />
       <Services />
       <TrackingPreview />
       <CustomerPortal />
-      <Testimonials />
+
       <Cta />
       
       {/* WhatsApp Floating Button */}

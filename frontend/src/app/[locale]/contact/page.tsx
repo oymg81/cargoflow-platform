@@ -46,7 +46,7 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <section id="contact-form" className="py-24 bg-white">
+      <section id="contact-form" className="py-24 bg-red-700">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
             
@@ -197,17 +197,38 @@ export default function ContactPage() {
                 </ul>
               </div>
 
-              <div className="w-full h-[300px] bg-white rounded-2xl overflow-hidden shadow-sm border border-neutral-200">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114964.38942361205!2d-80.3118606439008!3d25.78254531062972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b0a20ec8c111%3A0xff96f271ddad4f65!2sMiami%2C%20FL!5e0!3m2!1sen!2sus!4v1715560000000!5m2!1sen!2sus"
-                  width="100%"
-                  height="100%"
-                  style={{ border: 0 }}
-                  allowFullScreen={false}
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  title="Logisti-K Location"
-                ></iframe>
+              <div className="bg-neutral-50 p-8 rounded-2xl border border-neutral-100 shadow-sm">
+                <h3 className="text-2xl font-bold text-[#07142b] mb-6">Peru Office</h3>
+                
+                <ul className="space-y-6">
+                  <li className="flex items-start gap-4 text-[#07142b]">
+                    <div className="w-12 h-12 bg-red-50 rounded-xl flex items-center justify-center shrink-0">
+                      <MapPin className="text-[#F05A28]" size={24} />
+                    </div>
+                    <div>
+                      <p className="font-bold text-lg mb-1 text-[#07142b]">{t('office_label')}</p>
+                      <p className="text-neutral-600">Av. Elmer Faucett 2851<br/>Callao, Peru</p>
+                    </div>
+                  </li>
+                  <li className="flex items-start gap-4 text-[#07142b]">
+                    <div className="w-12 h-12 bg-red-50 rounded-xl flex items-center justify-center shrink-0">
+                      <Phone className="text-[#F05A28]" size={24} />
+                    </div>
+                    <div>
+                      <p className="font-bold text-lg mb-1 text-[#07142b]">{t('phone_label')}</p>
+                      <a href="tel:+5111234567" className="text-neutral-600 hover:text-[#F05A28] transition-colors">+51 (1) 123-4567</a>
+                    </div>
+                  </li>
+                  <li className="flex items-start gap-4 text-[#07142b]">
+                    <div className="w-12 h-12 bg-red-50 rounded-xl flex items-center justify-center shrink-0">
+                      <Mail className="text-[#F05A28]" size={24} />
+                    </div>
+                    <div>
+                      <p className="font-bold text-lg mb-1 text-[#07142b]">{t('email_label')}</p>
+                      <a href="mailto:peru@logisti-k.us" className="text-neutral-600 hover:text-[#F05A28] transition-colors">peru@logisti-k.us</a>
+                    </div>
+                  </li>
+                </ul>
               </div>
             </div>
 

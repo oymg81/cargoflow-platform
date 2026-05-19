@@ -15,11 +15,11 @@ export default function Footer() {
           {/* Column 1: Company Info */}
           <div className="flex flex-col gap-6">
             <div className="bg-white p-3 rounded-md inline-block w-fit">
-              <Image 
-                src="/logisti-k-transparent.png" 
-                alt="Logisti-K Logo" 
-                width={120} 
-                height={120} 
+              <Image
+                src="/logisti-k-transparent.png"
+                alt="Logisti-K Logo"
+                width={120}
+                height={120}
                 className="h-28 w-28 object-contain"
               />
             </div>
