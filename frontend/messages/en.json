@@ -155,5 +155,27 @@
     "feat4_desc": "Centralized portal for all your shipping documentation.",
     "feat5_title": "Secure Access",
     "feat5_desc": "Enterprise-grade security protecting your logistics data."
+  },
+  "ClientReviews": {
+    "section_subtitle": "CLIENT EXPERIENCES",
+    "section_title": "Trusted by Leaders Worldwide",
+    "btn_cancel": "Cancel",
+    "btn_submit_review": "Submit a Review",
+    "form_title": "Share Your Experience",
+    "success_title": "Review Submitted!",
+    "success_msg": "Thank you. Your review is currently pending approval and will appear on the site once approved by our team.",
+    "label_fullname": "Full Name *",
+    "label_rating": "Rating *",
+    "rating_5": "5 Stars - Excellent",
+    "rating_4": "4 Stars - Very Good",
+    "rating_3": "3 Stars - Average",
+    "rating_2": "2 Stars - Poor",
+    "rating_1": "1 Star - Terrible",
+    "label_role": "Job Title / Role",
+    "label_company": "Company",
+    "label_review": "Review *",
+    "error_msg": "There was an error submitting your review. Please try again.",
+    "btn_submitting": "Submitting...",
+    "empty_state": "No client reviews yet. Be the first to share your experience!"
   }
 }

@@ -155,5 +155,27 @@
     "feat4_desc": "Portal centralizado para toda su documentación de envío.",
     "feat5_title": "Acceso Seguro",
     "feat5_desc": "Seguridad de nivel empresarial protegiendo sus datos logísticos."
+  },
+  "ClientReviews": {
+    "section_subtitle": "EXPERIENCIAS DE CLIENTES",
+    "section_title": "Confiables para Líderes Mundiales",
+    "btn_cancel": "Cancelar",
+    "btn_submit_review": "Enviar una Reseña",
+    "form_title": "Comparta Su Experiencia",
+    "success_title": "¡Reseña Enviada!",
+    "success_msg": "Gracias. Su reseña está actualmente pendiente de aprobación y aparecerá en el sitio una vez aprobada por nuestro equipo.",
+    "label_fullname": "Nombre Completo *",
+    "label_rating": "Calificación *",
+    "rating_5": "5 Estrellas - Excelente",
+    "rating_4": "4 Estrellas - Muy Bueno",
+    "rating_3": "3 Estrellas - Promedio",
+    "rating_2": "2 Estrellas - Pobre",
+    "rating_1": "1 Estrella - Terrible",
+    "label_role": "Cargo / Puesto",
+    "label_company": "Empresa",
+    "label_review": "Reseña *",
+    "error_msg": "Hubo un error al enviar su reseña. Por favor, inténtelo de nuevo.",
+    "btn_submitting": "Enviando...",
+    "empty_state": "Aún no hay reseñas de clientes. ¡Sea el primero en compartir su experiencia!"
   }
 }
