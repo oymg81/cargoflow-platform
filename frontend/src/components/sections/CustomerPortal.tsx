@@ -15,7 +15,7 @@ export default function CustomerPortal() {
   ];
 
   return (
-    <section className="py-24 bg-gray-50 relative overflow-hidden">
+    <section className="py-24 bg-white relative overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-5xl font-bold text-[#07142b] mb-6">{t('title')}</h2>
@@ -32,7 +32,7 @@ export default function CustomerPortal() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: idx * 0.1, duration: 0.5 }}
-              className="bg-white p-8 rounded-2xl shadow-sm border border-neutral-100 hover:shadow-xl hover:-translate-y-1 transition-all group"
+              className="bg-gradient-to-br from-[#F5F5F5] to-[#DADADA] backdrop-blur-sm p-8 rounded-2xl shadow-sm border border-neutral-200 hover:shadow-xl hover:-translate-y-1 transition-all group"
             >
               <div className="w-14 h-14 bg-red-50 text-[#F05A28] rounded-xl flex items-center justify-center mb-6 group-hover:bg-[#F05A28] group-hover:text-white transition-colors">
                 {feature.icon}

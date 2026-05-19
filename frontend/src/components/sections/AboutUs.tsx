@@ -21,7 +21,7 @@ const fadeUp: Variants = {
 };
 
   return (
-    <section className="py-24 bg-white border-b border-gray-100 overflow-hidden relative">
+    <section className="py-24 bg-[#DADADA]">
       <div className="container mx-auto px-4 max-w-7xl">
         <div className="flex flex-col lg:flex-row items-center gap-16">
           

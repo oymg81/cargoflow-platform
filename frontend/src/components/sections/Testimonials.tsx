@@ -43,7 +43,7 @@ export default function Testimonials() {
   };
 
   return (
-    <section className="py-24 bg-gray-50 relative overflow-hidden">
+    <section className="py-24 bg-[#DADADA]">
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-[#F77F00] font-bold tracking-wider uppercase mb-3 text-sm">TESTIMONIALS</h2>

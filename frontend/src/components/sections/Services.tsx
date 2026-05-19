@@ -69,7 +69,7 @@ export default function Services() {
   ];
 
   return (
-    <section className="py-24 bg-white">
+    <section className="py-24 bg-[#DADADA]">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-primary font-semibold tracking-wider uppercase mb-3">{t('subtitle')}</h2>

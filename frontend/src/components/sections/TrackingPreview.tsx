@@ -10,7 +10,7 @@ export default function TrackingPreview() {
   const [trackingNumber, setTrackingNumber] = useState('');
 
   return (
-    <section className="py-20 bg-white relative overflow-hidden">
+    <section className="py-20 bg-[#DADADA]">
       {/* Abstract Background Shapes */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-[#F05A28] opacity-5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3"></div>
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-gray-200 opacity-20 rounded-full blur-3xl translate-y-1/2 -translate-x-1/3"></div>
