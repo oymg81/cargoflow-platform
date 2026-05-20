@@ -38,13 +38,6 @@ export default function Cta() {
             >
               {t('quote_btn')} <ArrowRight size={20} />
             </Link>
-            
-            <Link 
-              href="/contact" 
-              className="w-full sm:w-auto bg-transparent border-2 border-white text-white hover:bg-white/10 px-8 py-4 rounded-full font-bold text-lg transition-colors flex items-center justify-center gap-2"
-            >
-              {t('contact_btn')} <ArrowRight size={20} />
-            </Link>
           </div>
         </motion.div>
       </div>

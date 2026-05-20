@@ -10,11 +10,11 @@ export default function Hero() {
   const t = useTranslations('Hero');
 
   return (
-    <section className="relative pt-[120px] pb-10 min-h-[90vh] flex items-center">
+    <section className="relative pt-24 lg:pt-[120px] pb-10 min-h-[80vh] lg:min-h-[90vh] flex items-center">
       <div className="container max-w-7xl mx-auto px-4 lg:px-8 h-full">
         
         {/* Full Background Hero Container */}
-        <div className="relative rounded-[2rem] overflow-hidden shadow-2xl border border-gray-200 min-h-[650px] flex items-center">
+        <div className="relative rounded-[2rem] overflow-hidden shadow-2xl border border-gray-200 min-h-[500px] lg:min-h-[650px] flex items-center">
           
           {/* Background Image */}
           <Image
@@ -29,7 +29,7 @@ export default function Hero() {
           <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/45 to-black/15" />
           
           {/* Content Overlay */}
-          <div className="relative z-10 w-full max-w-xl px-8 lg:px-16 xl:px-20 py-12 lg:py-0">
+          <div className="relative z-10 w-full max-w-xl px-6 md:px-8 lg:px-16 xl:px-20 py-12 lg:py-0">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}

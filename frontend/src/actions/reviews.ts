@@ -4,23 +4,28 @@ import { createClient } from '@/utils/supabase/server';
 import { revalidatePath } from 'next/cache';
 
 export async function submitReview(data: { quote: string; author: string; role: string; company: string; rating: number }) {
-  const supabase = await createClient();
-  
-  const { error } = await supabase
-    .from('reviews')
-    .insert([
-      {
-        ...data,
-        status: 'pending',
-      }
-    ]);
+  try {
+    const supabase = await createClient();
     
-  if (error) {
-    console.error('Error submitting review:', error);
-    return { success: false, error: error.message };
+    const { error } = await supabase
+      .from('reviews')
+      .insert([
+        {
+          ...data,
+          status: 'pending',
+        }
+      ]);
+      
+    if (error) {
+      console.error('Supabase Insert Error:', JSON.stringify(error, null, 2));
+      return { success: false, error: error.message || 'Failed to insert into Supabase' };
+    }
+    
+    return { success: true };
+  } catch (err: any) {
+    console.error('Catch Error submitting review:', err);
+    return { success: false, error: err.message || 'Unknown error occurred' };
   }
-  
-  return { success: true };
 }
 
 export async function getApprovedReviews() {

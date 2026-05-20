@@ -20,6 +20,7 @@ export default function ClientReviews() {
   const [reviews, setReviews] = useState<Review[]>([]);
   const [showForm, setShowForm] = useState(false);
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
+  const [errorMsg, setErrorMsg] = useState<string | null>(null);
 
   useEffect(() => {
     async function loadReviews() {
@@ -27,11 +28,23 @@ export default function ClientReviews() {
       setReviews(data as any);
     }
     loadReviews();
+
+    // Check for shareable review link
+    if (typeof window !== 'undefined') {
+      const urlParams = new URLSearchParams(window.location.search);
+      if (window.location.hash === '#review' || urlParams.get('review') === 'true') {
+        setShowForm(true);
+        setTimeout(() => {
+          document.getElementById('reviews-section')?.scrollIntoView({ behavior: 'smooth' });
+        }, 500);
+      }
+    }
   }, []);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setStatus('loading');
+    setErrorMsg(null);
     
     try {
       const formData = new FormData(e.target as HTMLFormElement);
@@ -53,14 +66,16 @@ export default function ClientReviews() {
         }, 3000);
       } else {
         setStatus('error');
+        setErrorMsg(res.error || 'Unknown error occurred.');
       }
-    } catch (error) {
+    } catch (error: any) {
       setStatus('error');
+      setErrorMsg(error.message || 'Network error.');
     }
   };
 
   return (
-    <section className="py-24 bg-gray-50 relative overflow-hidden">
+    <section id="reviews-section" className="py-24 bg-gray-50 relative overflow-hidden">
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-[#F77F00] font-bold tracking-wider uppercase mb-3 text-sm">{t('section_subtitle')}</h2>
@@ -122,7 +137,10 @@ export default function ClientReviews() {
                 </div>
 
                 {status === 'error' && (
-                  <p className="text-red-600 text-sm">{t('error_msg')}</p>
+                  <div className="bg-red-50 p-4 rounded-lg border border-red-200">
+                    <p className="text-red-700 font-semibold text-sm mb-1">{t('error_msg')}</p>
+                    <p className="text-red-600 text-xs font-mono break-words">{errorMsg}</p>
+                  </div>
                 )}
 
                 <button 
