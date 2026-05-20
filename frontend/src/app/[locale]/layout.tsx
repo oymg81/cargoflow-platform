@@ -11,6 +11,9 @@ import "../globals.css";
 export const metadata: Metadata = {
   title: "LOGISTI-K | Integrated Global Logistics Solutions",
   description: "Reliable freight forwarding and logistics services connecting businesses worldwide.",
+  icons: {
+    icon: "/icon.png",
+  },
 };
 
 export default async function RootLayout({
@@ -32,10 +35,10 @@ export default async function RootLayout({
       lang={locale}
       className={`h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-white text-[#07142b] font-sans">
+      <body className="min-h-full flex flex-col bg-white text-[#07142b] font-sans w-full max-w-full overflow-x-hidden">
         <NextIntlClientProvider messages={messages}>
           <Navbar />
-          <main className="flex-1">
+          <main className="flex-1 w-full max-w-full overflow-x-hidden">
             {children}
           </main>
           <Footer />
