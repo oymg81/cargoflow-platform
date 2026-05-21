@@ -10,7 +10,7 @@ export default function Hero() {
   const t = useTranslations('Hero');
 
   return (
-    <section className="relative pt-24 lg:pt-[120px] pb-10 min-h-[80vh] lg:min-h-[90vh] flex items-center">
+    <section className="relative pt-[100px] lg:pt-[120px] pb-10 min-h-[80vh] lg:min-h-[90vh] flex items-start lg:items-center">
       <div className="w-full max-w-7xl mx-auto px-4 lg:px-8 h-full overflow-x-hidden">
         
         {/* Full Background Hero Container */}

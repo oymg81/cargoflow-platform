@@ -81,7 +81,7 @@ export default function Navbar() {
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
-            className="lg:hidden absolute top-[90px] left-4 right-4 bg-white border border-neutral-200 shadow-2xl rounded-2xl overflow-hidden"
+            className="lg:hidden fixed top-[85px] left-4 right-4 bg-white border border-neutral-200 shadow-2xl rounded-2xl overflow-hidden z-[100]"
           >
             <nav className="flex flex-col p-6 gap-4">
               {links.map((link) => (
