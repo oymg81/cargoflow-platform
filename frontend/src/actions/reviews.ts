@@ -5,6 +5,9 @@ import { revalidatePath } from 'next/cache';
 
 export async function submitReview(data: { quote: string; author: string; role: string; company: string; rating: number }) {
   try {
+    console.log("SERVER SUPABASE URL EXISTS", !!process.env.NEXT_PUBLIC_SUPABASE_URL)
+    console.log("SERVER SUPABASE KEY EXISTS", !!process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY)
+    
     const supabase = await createClient();
     
     const { error } = await supabase
