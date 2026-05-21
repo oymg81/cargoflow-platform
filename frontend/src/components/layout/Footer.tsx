@@ -1,7 +1,8 @@
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/routing';
 import Image from 'next/image';
-import { MapPin, Phone, Mail, Facebook, Linkedin, Instagram } from 'lucide-react';
+import { MapPin, Phone, Mail } from 'lucide-react';
+import { FaFacebookF, FaLinkedinIn, FaInstagram } from 'react-icons/fa';
 
 export default function Footer() {
   const t = useTranslations('Navigation');
@@ -28,13 +29,13 @@ export default function Footer() {
             </p>
             <div className="flex gap-4 mt-2">
               <a href="https://www.facebook.com/share/1AzTDjdREe/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="w-10 h-10 rounded-full bg-white border border-gray-200 shadow-sm flex items-center justify-center hover:border-[#F05A28] hover:text-[#F05A28] transition-all text-[#07142b] hover:-translate-y-1">
-                <Facebook size={18} />
+                <FaFacebookF size={18} />
               </a>
               <a href="https://www.linkedin.com/company/logisti-k/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="w-10 h-10 rounded-full bg-white border border-gray-200 shadow-sm flex items-center justify-center hover:border-[#F05A28] hover:text-[#F05A28] transition-all text-[#07142b] hover:-translate-y-1">
-                <Linkedin size={18} />
+                <FaLinkedinIn size={18} />
               </a>
               <a href="https://www.instagram.com/logistik.us?igsh=MWN3Z3lrcDJveDNpOQ==" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="w-10 h-10 rounded-full bg-white border border-gray-200 shadow-sm flex items-center justify-center hover:border-[#F05A28] hover:text-[#F05A28] transition-all text-[#07142b] hover:-translate-y-1">
-                <Instagram size={18} />
+                <FaInstagram size={18} />
               </a>
             </div>
           </div>
