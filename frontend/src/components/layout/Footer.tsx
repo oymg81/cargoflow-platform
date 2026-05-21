@@ -17,7 +17,7 @@ export default function Footer() {
           <div className="flex flex-col gap-6">
             <div className="bg-white p-3 rounded-md inline-block w-fit">
               <Image
-                src="/logisti-k-transparent.png"
+                src="/logo_logistik.png"
                 alt="Logisti-K Logo"
                 width={120}
                 height={120}
@@ -70,7 +70,7 @@ export default function Footer() {
               <div className="flex gap-6 md:gap-10 items-center">
                 <div className="w-[80px] h-[80px] md:w-[100px] md:h-[100px] rounded-full border-2 border-gray-200 bg-white shadow-md hover:shadow-lg hover:-translate-y-1 transition-all flex items-center justify-center p-3 md:p-4">
                   <Image 
-                    src="/images/USHOMELAND.jpeg" 
+                    src="/images/USHomeland.png" 
                     alt="US Homeland Security" 
                     width={72} 
                     height={72} 
@@ -79,7 +79,7 @@ export default function Footer() {
                 </div>
                 <div className="w-[80px] h-[80px] md:w-[100px] md:h-[100px] rounded-full border-2 border-gray-200 bg-white shadow-md hover:shadow-lg hover:-translate-y-1 transition-all flex items-center justify-center p-3 md:p-4">
                   <Image 
-                    src="/images/NCBFAA.jpeg" 
+                    src="/images/NCBFAA.png" 
                     alt="NCBFAA" 
                     width={72} 
                     height={72} 

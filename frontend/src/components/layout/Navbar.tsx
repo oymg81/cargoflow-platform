@@ -29,7 +29,7 @@ export default function Navbar() {
           <div className="shrink-0 flex items-center">
             <Link href="/" className="flex items-center">
               <Image
-                src="/logisti-k-transparent.png"
+                src="/logo_logistik.png"
                 alt="Logisti-K Logo"
                 width={70}
                 height={70}

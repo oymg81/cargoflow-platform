@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   title: "LOGISTI-K | Integrated Global Logistics Solutions",
   description: "Reliable freight forwarding and logistics services connecting businesses worldwide.",
   icons: {
-    icon: "/icon.png",
+    icon: "/logo_logistik.png",
   },
 };
 
