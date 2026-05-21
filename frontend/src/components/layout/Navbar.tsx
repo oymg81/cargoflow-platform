@@ -22,11 +22,11 @@ export default function Navbar() {
   ];
 
   return (
-    <header className="fixed top-4 md:top-6 left-0 right-0 z-50 px-4 max-w-7xl mx-auto w-full transition-all duration-300">
-      <div className="bg-white/95 backdrop-blur-md rounded-full border border-gray-200 shadow-sm px-6 h-[80px] flex justify-between items-center gap-4">
+    <header className="fixed top-4 md:top-6 left-0 right-0 z-50 px-4 max-w-[100vw] lg:max-w-7xl mx-auto w-full transition-all duration-300">
+      <div className="bg-white/95 backdrop-blur-md rounded-full border border-gray-200 shadow-sm px-4 md:px-6 h-[70px] md:h-[80px] flex justify-between items-center gap-2 md:gap-4 max-w-full">
 
         {/* Logo */}
-        <div className="shrink-0 flex items-center">
+        <div className="shrink-0 flex items-center min-w-0">
           <Link href="/" className="flex items-center">
             <Image
               src="/logisti-k-transparent.png"
@@ -34,7 +34,7 @@ export default function Navbar() {
               width={70}
               height={70}
               priority
-              className="h-14 w-14 object-contain"
+              className="h-12 w-12 md:h-14 md:w-14 object-contain"
             />
           </Link>
         </div>

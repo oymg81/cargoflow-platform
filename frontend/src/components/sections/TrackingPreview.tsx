@@ -27,17 +27,17 @@ export default function TrackingPreview() {
               {t('desc')}
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-3">
+            <div className="flex flex-col sm:flex-row gap-4 max-w-full">
               <div className="relative flex-1">
-                <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
-                  <PackageSearch className="text-gray-400" size={20} />
+                <div className="absolute inset-y-0 left-0 pl-6 flex items-center pointer-events-none">
+                  <PackageSearch className="text-gray-400" size={22} />
                 </div>
                 <input
                   type="text"
                   placeholder={t('placeholder')}
                   value={trackingNumber}
                   onChange={(e) => setTrackingNumber(e.target.value)}
-                  className="w-full bg-white text-[#07142b] pl-12 pr-4 py-4 rounded-md shadow-sm text-lg border border-gray-200"
+                  className="w-full bg-white text-[#07142b] pl-14 pr-6 py-4 rounded-full shadow-lg text-lg border-2 border-transparent focus:border-[#F05A28]/30 focus:outline-none focus:ring-4 focus:ring-[#F05A28]/10 transition-all font-medium"
                   readOnly
                 />
               </div>
@@ -45,7 +45,7 @@ export default function TrackingPreview() {
                 href="https://logisti-k.managercargo.com/public/status/indexstatus/indexstatusacc/wi/si"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-primary hover:bg-primary-dark text-white px-8 py-4 rounded-md font-medium text-lg transition-colors flex items-center justify-center gap-2 shadow-lg w-full sm:w-auto text-center"
+                className="bg-gradient-to-r from-[#F05A28] to-[#E63946] hover:shadow-lg hover:shadow-[#F05A28]/30 hover:-translate-y-0.5 text-white px-10 py-4 rounded-full font-bold text-lg transition-all flex items-center justify-center gap-2 shrink-0 shadow-lg"
               >
                 {t('track_btn')} <ArrowRight size={20} />
               </a>

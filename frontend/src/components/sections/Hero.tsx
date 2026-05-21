@@ -11,7 +11,7 @@ export default function Hero() {
 
   return (
     <section className="relative pt-24 lg:pt-[120px] pb-10 min-h-[80vh] lg:min-h-[90vh] flex items-center">
-      <div className="container max-w-7xl mx-auto px-4 lg:px-8 h-full">
+      <div className="w-full max-w-7xl mx-auto px-4 lg:px-8 h-full overflow-x-hidden">
         
         {/* Full Background Hero Container */}
         <div className="relative rounded-[2rem] overflow-hidden shadow-2xl border border-gray-200 min-h-[500px] lg:min-h-[650px] flex items-center">
