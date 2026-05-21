@@ -77,7 +77,7 @@ export default function Navbar() {
 
         {/* Mobile Navigation Dropdown */}
         {isOpen && (
-          <div className="md:hidden absolute left-4 right-4 top-full mt-3 z-[9999] rounded-2xl border border-slate-200 bg-white p-4 shadow-2xl">
+          <div className="lg:hidden absolute left-4 right-4 top-full mt-3 z-[9999] rounded-2xl border border-slate-200 bg-white p-4 shadow-2xl">
             <nav className="flex flex-col gap-3">
               {links.map((link) => (
                 <Link
