@@ -10,9 +10,9 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-gray-100 text-[#07142b] pt-16 pb-8 border-t border-gray-200">
+    <footer className="bg-gray-100 text-[#07142b] pt-12 pb-8 border-t border-gray-200">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12 mb-8">
           {/* Column 1: Company Info */}
           <div className="flex flex-col gap-6">
             <div className="bg-white p-3 rounded-md inline-block w-fit">
@@ -42,7 +42,7 @@ export default function Footer() {
 
           {/* Column 2: Miami Office & Warehouse */}
           <div className="flex flex-col gap-6">
-            <div className="text-gray-600 text-sm leading-relaxed space-y-6">
+            <div className="text-gray-600 text-sm leading-relaxed space-y-5">
               <div>
                 <p className="font-bold text-xs tracking-wider text-[#F05A28] mb-1">{tFooter('hq_label')}</p>
                 <p>2598 E SUNRISE BLVD STE 2104<br />FORT LAUDERDALE, FL 33304</p>
@@ -57,32 +57,32 @@ export default function Footer() {
           </div>
 
           {/* Column 3: Perú Office */}
-          <div className="flex flex-col gap-6">
-            <div className="text-gray-600 text-sm leading-relaxed space-y-6">
+          <div className="flex flex-col h-full">
+            <div className="text-gray-600 text-sm leading-relaxed space-y-4">
               <div>
                 <p className="font-bold text-xs tracking-wider text-[#F05A28] mb-1">{tFooter('peru_label')}</p>
                 <p>Av. José Larco 1232, Ste 430<br />Miraflores 15086, Perú</p>
               </div>
             </div>
 
-            <div className="mt-2 md:mt-4">
-              <p className="font-bold text-xs tracking-wider text-[#F05A28] mb-3 uppercase">CERTIFIED:</p>
-              <div className="flex gap-4 md:gap-8 items-center">
-                <div className="w-[72px] h-[72px] md:w-[84px] md:h-[84px] rounded-full border border-gray-200 bg-white shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all flex items-center justify-center p-2.5 md:p-3">
+            <div className="mt-8 md:mt-auto pt-2">
+              <p className="font-bold text-sm tracking-widest text-[#F05A28] mb-4 uppercase">CERTIFIED</p>
+              <div className="flex gap-6 md:gap-10 items-center">
+                <div className="w-[80px] h-[80px] md:w-[100px] md:h-[100px] rounded-full border-2 border-gray-200 bg-white shadow-md hover:shadow-lg hover:-translate-y-1 transition-all flex items-center justify-center p-3 md:p-4">
                   <Image 
                     src="/images/USHOMELAND.jpeg" 
                     alt="US Homeland Security" 
-                    width={60} 
-                    height={60} 
+                    width={72} 
+                    height={72} 
                     className="object-contain mix-blend-multiply w-full h-full" 
                   />
                 </div>
-                <div className="w-[72px] h-[72px] md:w-[84px] md:h-[84px] rounded-full border border-gray-200 bg-white shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all flex items-center justify-center p-2.5 md:p-3">
+                <div className="w-[80px] h-[80px] md:w-[100px] md:h-[100px] rounded-full border-2 border-gray-200 bg-white shadow-md hover:shadow-lg hover:-translate-y-1 transition-all flex items-center justify-center p-3 md:p-4">
                   <Image 
                     src="/images/NCBFAA.jpeg" 
                     alt="NCBFAA" 
-                    width={60} 
-                    height={60} 
+                    width={72} 
+                    height={72} 
                     className="object-contain mix-blend-multiply w-full h-full" 
                   />
                 </div>
