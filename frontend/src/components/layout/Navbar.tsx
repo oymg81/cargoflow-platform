@@ -22,7 +22,7 @@ export default function Navbar() {
   ];
 
   return (
-    <header className="fixed top-4 md:top-6 left-0 right-0 z-50 px-4 max-w-[100vw] lg:max-w-7xl mx-auto w-full transition-all duration-300">
+    <header className="fixed top-4 md:top-6 left-0 right-0 z-[9999] px-4 max-w-[100vw] lg:max-w-7xl mx-auto w-full transition-all duration-300">
       <div className="bg-white/95 backdrop-blur-md rounded-full border border-gray-200 shadow-sm px-4 md:px-6 h-[70px] md:h-[80px] flex justify-between items-center gap-2 md:gap-4 max-w-full">
 
         {/* Logo */}
@@ -75,40 +75,33 @@ export default function Navbar() {
       </div>
 
       {/* Mobile Navigation Dropdown */}
-      <AnimatePresence>
-        {isOpen && (
-          <motion.div
-            initial={{ opacity: 0, y: -10 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -10 }}
-            className="lg:hidden fixed top-[85px] left-4 right-4 bg-white border border-neutral-200 shadow-2xl rounded-2xl overflow-hidden z-[100]"
-          >
-            <nav className="flex flex-col p-6 gap-4">
-              {links.map((link) => (
-                <Link
-                  key={link.href}
-                  href={link.href as any}
-                  onClick={() => setIsOpen(false)}
-                  className="text-lg font-bold text-[#07142b] hover:text-[#F05A28] p-2 border-b border-neutral-100 last:border-0"
-                >
-                  {link.label}
-                </Link>
-              ))}
-              <div className="flex flex-col gap-4 mt-4 pt-4 border-t border-neutral-100">
-                <a
-                  href="https://logisti-k.managercargo.com/public/login/indexlogin/logincasillero"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={() => setIsOpen(false)}
-                  className="bg-gradient-to-r from-[#F05A28] to-[#E63946] text-white text-center py-4 rounded-xl font-bold shadow-lg flex items-center justify-center gap-2"
-                >
-                  Sign In <ExternalLink size={20} />
-                </a>
-              </div>
-            </nav>
-          </motion.div>
-        )}
-      </AnimatePresence>
+      {isOpen && (
+        <div className="lg:hidden absolute left-4 right-4 top-full mt-3 z-[9999] rounded-2xl bg-white shadow-2xl border border-slate-200 p-4">
+          <nav className="flex flex-col gap-3">
+            {links.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href as any}
+                onClick={() => setIsOpen(false)}
+                className="text-lg font-bold text-[#07142b] hover:text-[#F05A28] p-2 border-b border-slate-100 last:border-0"
+              >
+                {link.label}
+              </Link>
+            ))}
+            <div className="flex flex-col gap-4 mt-2 pt-2">
+              <a
+                href="https://logisti-k.managercargo.com/public/login/indexlogin/logincasillero"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setIsOpen(false)}
+                className="bg-gradient-to-r from-[#F05A28] to-[#E63946] text-white text-center py-4 rounded-xl font-bold shadow-lg flex items-center justify-center gap-2"
+              >
+                Sign In <ExternalLink size={20} />
+              </a>
+            </div>
+          </nav>
+        </div>
+      )}
     </header>
   );
 }
