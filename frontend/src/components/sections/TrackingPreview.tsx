@@ -10,7 +10,7 @@ export default function TrackingPreview() {
   const [trackingNumber, setTrackingNumber] = useState('');
 
   return (
-    <section className="py-20 bg-[#DADADA]">
+    <section className="py-20 bg-[#DADADA] relative overflow-hidden">
       {/* Abstract Background Shapes */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-[#F05A28] opacity-5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3"></div>
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-gray-200 opacity-20 rounded-full blur-3xl translate-y-1/2 -translate-x-1/3"></div>
@@ -38,7 +38,6 @@ export default function TrackingPreview() {
                   value={trackingNumber}
                   onChange={(e) => setTrackingNumber(e.target.value)}
                   className="w-full bg-white text-[#07142b] pl-14 pr-6 py-4 rounded-full shadow-lg text-lg border-2 border-transparent focus:border-[#F05A28]/30 focus:outline-none focus:ring-4 focus:ring-[#F05A28]/10 transition-all font-medium"
-                  readOnly
                 />
               </div>
               <a
