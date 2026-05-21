@@ -17,7 +17,7 @@ export default function Footer() {
           <div className="flex flex-col gap-6">
             <div className="bg-white p-3 rounded-md inline-block w-fit">
               <Image
-                src="/logo_logistik.png"
+                src="/images/logo_logistik.png"
                 alt="Logisti-K Logo"
                 width={120}
                 height={120}
