@@ -40,9 +40,21 @@ export default function Footer() {
             
             <div className="mt-6">
               <p className="font-bold text-xs tracking-wider text-[#F05A28] mb-3 uppercase">CERTIFIED:</p>
-              <div className="flex gap-4 items-center">
-                <Image src="/images/USHOMELAND.jpeg" alt="US Homeland Security" width={56} height={56} className="object-contain mix-blend-multiply rounded-full border border-gray-200 bg-white" />
-                <Image src="/images/NCBFAA.jpeg" alt="NCBFAA" width={56} height={56} className="object-contain mix-blend-multiply rounded-full border border-gray-200 bg-white" />
+              <div className="flex gap-5 items-center">
+                <Image 
+                  src="/images/USHOMELAND.jpeg" 
+                  alt="US Homeland Security" 
+                  width={80} 
+                  height={80} 
+                  className="object-contain mix-blend-multiply rounded-full border border-gray-200 bg-white shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all" 
+                />
+                <Image 
+                  src="/images/NCBFAA.jpeg" 
+                  alt="NCBFAA" 
+                  width={80} 
+                  height={80} 
+                  className="object-contain mix-blend-multiply rounded-full border border-gray-200 bg-white shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all" 
+                />
               </div>
             </div>
           </div>
