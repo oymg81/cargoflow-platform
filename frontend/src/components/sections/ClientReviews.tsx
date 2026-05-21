@@ -45,7 +45,7 @@ export default function ClientReviews() {
     e.preventDefault();
     setStatus('loading');
     setErrorMsg(null);
-    
+
     try {
       const formData = new FormData(e.target as HTMLFormElement);
       const data = {
@@ -55,15 +55,15 @@ export default function ClientReviews() {
         company: formData.get('company') as string,
         rating: Number(formData.get('rating'))
       };
-      
+
       const res = await submitReview(data);
-      
+
       if (res.success) {
         setStatus('success');
         setTimeout(() => {
           setShowForm(false);
           setStatus('idle');
-        }, 3000);
+        }, 4000);
       } else {
         setStatus('error');
         setErrorMsg(res.error || 'Unknown error occurred.');
@@ -83,8 +83,8 @@ export default function ClientReviews() {
             {t('section_title')}
           </h3>
           <div className="w-12 h-1 bg-[#F05A28] mx-auto mt-6 mb-8"></div>
-          
-          <button 
+
+          <button
             onClick={() => setShowForm(!showForm)}
             className="bg-[#1E293B] hover:bg-[#334155] text-white font-bold py-3 px-6 rounded-lg transition-all shadow-md hover:-translate-y-0.5"
           >
@@ -95,7 +95,7 @@ export default function ClientReviews() {
         {showForm && (
           <div className="max-w-2xl mx-auto mb-16 bg-white p-8 rounded-2xl shadow-xl border border-neutral-100">
             <h4 className="text-2xl font-bold text-[#07142b] mb-6">{t('form_title')}</h4>
-            
+
             {status === 'success' ? (
               <div className="bg-emerald-50 text-emerald-800 p-6 rounded-lg border border-emerald-200">
                 <h3 className="text-lg font-bold mb-2">{t('success_title')}</h3>
@@ -119,7 +119,7 @@ export default function ClientReviews() {
                     </select>
                   </div>
                 </div>
-                
+
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
                     <label className="block text-sm font-semibold text-neutral-700 mb-2">{t('label_role')}</label>
@@ -143,8 +143,8 @@ export default function ClientReviews() {
                   </div>
                 )}
 
-                <button 
-                  type="submit" 
+                <button
+                  type="submit"
                   disabled={status === 'loading'}
                   className="w-full bg-[#F05A28] hover:bg-[#D9481B] text-white font-bold py-4 px-8 rounded-lg transition-all disabled:opacity-70 disabled:cursor-not-allowed"
                 >
@@ -162,17 +162,17 @@ export default function ClientReviews() {
                 <div className="mb-6">
                   <Quote size={40} className="text-[#F05A28] fill-[#F05A28] opacity-90" />
                 </div>
-                
+
                 <p className="text-neutral-700 font-medium leading-relaxed mb-8 flex-grow">
                   {review.quote}
                 </p>
-                
+
                 <div className="flex gap-1 mb-6">
                   {[...Array(review.rating)].map((_, i) => (
                     <Star key={i} size={16} className="text-[#F05A28] fill-[#F05A28]" />
                   ))}
                 </div>
-                
+
                 <div className="flex items-center gap-4 border-t border-neutral-100 pt-4 mt-auto">
                   <div className="w-12 h-12 rounded-full overflow-hidden shrink-0 border border-neutral-100 shadow-sm bg-neutral-100 flex items-center justify-center text-[#F05A28] font-bold text-lg">
                     {review.author.charAt(0)}
@@ -189,7 +189,7 @@ export default function ClientReviews() {
                 </div>
               </div>
             ))}
-            
+
             {reviews.length === 0 && !showForm && (
               <div className="col-span-1 md:col-span-3 text-center text-neutral-500 py-12">
                 {t('empty_state')}
