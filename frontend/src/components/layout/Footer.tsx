@@ -13,33 +13,35 @@ export default function Footer() {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mb-12">
           {/* Column 1: Company Info */}
-          <div className="flex flex-col gap-6">
-            <div className="bg-white p-3 rounded-md inline-block w-fit">
+          <div className="flex flex-col gap-4">
+            <div className="bg-white p-2.5 rounded-md inline-block w-fit mb-1">
               <Image
                 src="/logisti-k-transparent.png"
                 alt="Logisti-K Logo"
-                width={120}
-                height={120}
-                className="h-28 w-28 object-contain"
+                width={110}
+                height={110}
+                className="h-24 w-24 object-contain"
               />
             </div>
-            <p className="font-bold text-[#07142b] text-sm">
-              {tFooter('legal_entity')}
-            </p>
-            <div className="flex gap-4 mt-2">
-              <a href="https://www.facebook.com/share/1AzTDjdREe/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white border border-gray-200 shadow-sm flex items-center justify-center hover:border-[#F05A28] hover:text-[#F05A28] transition-all text-xs font-bold text-[#07142b] hover:-translate-y-1">
-                FB
-              </a>
-              <a href="https://www.linkedin.com/company/logisti-k/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white border border-gray-200 shadow-sm flex items-center justify-center hover:border-[#F05A28] hover:text-[#F05A28] transition-all text-xs font-bold text-[#07142b] hover:-translate-y-1">
-                IN
-              </a>
-              <a href="https://www.instagram.com/logistik.us?igsh=MWN3Z3lrcDJveDNpOQ==" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white border border-gray-200 shadow-sm flex items-center justify-center hover:border-[#F05A28] hover:text-[#F05A28] transition-all text-xs font-bold text-[#07142b] hover:-translate-y-1">
-                IG
-              </a>
+            <div className="flex flex-col gap-3">
+              <p className="font-bold text-[#07142b] text-sm">
+                {tFooter('legal_entity')}
+              </p>
+              <div className="flex gap-4">
+                <a href="https://www.facebook.com/share/1AzTDjdREe/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white border border-gray-200 shadow-sm flex items-center justify-center hover:border-[#F05A28] hover:text-[#F05A28] transition-all text-xs font-bold text-[#07142b] hover:-translate-y-1">
+                  FB
+                </a>
+                <a href="https://www.linkedin.com/company/logisti-k/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white border border-gray-200 shadow-sm flex items-center justify-center hover:border-[#F05A28] hover:text-[#F05A28] transition-all text-xs font-bold text-[#07142b] hover:-translate-y-1">
+                  IN
+                </a>
+                <a href="https://www.instagram.com/logistik.us?igsh=MWN3Z3lrcDJveDNpOQ==" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white border border-gray-200 shadow-sm flex items-center justify-center hover:border-[#F05A28] hover:text-[#F05A28] transition-all text-xs font-bold text-[#07142b] hover:-translate-y-1">
+                  IG
+                </a>
+              </div>
             </div>
             
-            <div className="mt-6">
-              <p className="font-bold text-xs tracking-wider text-[#F05A28] mb-3 uppercase">CERTIFIED:</p>
+            <div className="mt-1">
+              <p className="font-bold text-xs tracking-wider text-[#F05A28] mb-2 uppercase">CERTIFIED:</p>
               <div className="flex gap-5 items-center">
                 <Image 
                   src="/images/USHOMELAND.jpeg" 
