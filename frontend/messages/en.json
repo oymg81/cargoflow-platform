@@ -7,7 +7,8 @@
     "resources": "Resources",
     "contact": "Contact",
     "signInSignUp": "Sign In / Sign Up",
-    "signInSignUpShort": "Sign In / Up"
+    "signInSignUpShort": "Sign In / Up",
+    "signInSignUpMobile": "Sign In / Up"
   },
   "Hero": {
     "headline": "Integrated Global Logistics Solutions for Modern Businesses",

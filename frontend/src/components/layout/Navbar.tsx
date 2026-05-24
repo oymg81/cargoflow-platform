@@ -22,7 +22,7 @@ export default function Navbar() {
 
   return (
     <div className="relative z-[9999]">
-      <header className="fixed top-4 md:top-6 left-0 right-0 z-[9999] w-full max-w-full overflow-x-hidden transition-all duration-300 px-2 md:px-4">
+      <header className="fixed top-4 md:top-6 left-0 right-0 z-[9999] w-full max-w-full transition-all duration-300 px-2 md:px-4">
         <div className="mx-auto flex w-full max-w-7xl items-center justify-between gap-2 md:gap-3 bg-white/95 backdrop-blur-md rounded-full border border-gray-200 shadow-sm px-4 md:px-6 h-[60px] md:h-[70px] lg:h-[80px]">
           
           {/* Logo */}
@@ -56,9 +56,13 @@ export default function Navbar() {
             ))}
           </nav>
 
-          {/* Actions */}
           <div className="flex items-center gap-2 lg:gap-4 shrink-0">
             <LanguageSwitcher />
+
+            {/* Compact Mobile Auth Button - visible only on mobile < md */}
+            <a href="https://logisti-k.managercargo.com/public/login/indexlogin/logincasillero" target="_blank" rel="noopener noreferrer" className="flex md:hidden items-center gap-1 bg-gradient-to-r from-[#F05A28] to-[#E63946] text-white px-2.5 py-1.5 rounded-full text-[10px] sm:text-xs font-bold transition-all whitespace-nowrap shrink-0">
+              {t('signInSignUpMobile')} <ExternalLink size={10} className="shrink-0" />
+            </a>
 
             {/* Sign In Button - Hide on smaller screens (md) to make room for nav links, show on lg */}
             <a href="https://logisti-k.managercargo.com/public/login/indexlogin/logincasillero" target="_blank" rel="noopener noreferrer" className="hidden md:flex items-center gap-2 bg-gradient-to-r from-[#F05A28] to-[#E63946] hover:shadow-lg hover:shadow-[#F05A28]/30 hover:-translate-y-0.5 text-white px-4 lg:px-6 py-2 lg:py-2.5 rounded-full text-xs lg:text-sm font-bold transition-all whitespace-nowrap">
@@ -79,7 +83,7 @@ export default function Navbar() {
 
         {/* Mobile Navigation Dropdown - Only for < md */}
         {isOpen && (
-          <div className="md:hidden absolute left-4 right-4 top-full mt-2 z-[9999] rounded-2xl border border-slate-200 bg-white p-4 shadow-2xl">
+          <div className="md:hidden absolute left-4 right-4 top-full mt-2 z-[9999] rounded-2xl border border-slate-200 bg-white p-4 shadow-2xl overflow-visible">
             <nav className="flex flex-col gap-3">
               {links.map((link) => (
                 <Link
@@ -91,17 +95,6 @@ export default function Navbar() {
                   {link.label}
                 </Link>
               ))}
-              <div className="flex flex-col gap-4 mt-2 pt-2">
-                <a
-                  href="https://logisti-k.managercargo.com/public/login/indexlogin/logincasillero"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={() => setIsOpen(false)}
-                  className="bg-gradient-to-r from-[#F05A28] to-[#E63946] text-white text-center py-3 rounded-xl font-bold shadow-lg flex items-center justify-center gap-2 text-sm"
-                >
-                  {t('signInSignUp')} <ExternalLink size={18} />
-                </a>
-              </div>
             </nav>
           </div>
         )}
