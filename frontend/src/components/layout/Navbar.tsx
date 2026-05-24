@@ -61,8 +61,10 @@ export default function Navbar() {
             <LanguageSwitcher />
 
             {/* Sign In Button - Hide on smaller screens (md) to make room for nav links, show on lg */}
-            <a href="https://logisti-k.managercargo.com/public/login/indexlogin/logincasillero" target="_blank" rel="noopener noreferrer" className="hidden lg:flex items-center gap-2 bg-gradient-to-r from-[#F05A28] to-[#E63946] hover:shadow-lg hover:shadow-[#F05A28]/30 hover:-translate-y-0.5 text-white px-4 lg:px-6 py-2 lg:py-2.5 rounded-full text-xs lg:text-sm font-bold transition-all whitespace-nowrap">
-              {t('signInSignUp')} <ExternalLink size={16} />
+            <a href="https://logisti-k.managercargo.com/public/login/indexlogin/logincasillero" target="_blank" rel="noopener noreferrer" className="hidden md:flex items-center gap-2 bg-gradient-to-r from-[#F05A28] to-[#E63946] hover:shadow-lg hover:shadow-[#F05A28]/30 hover:-translate-y-0.5 text-white px-4 lg:px-6 py-2 lg:py-2.5 rounded-full text-xs lg:text-sm font-bold transition-all whitespace-nowrap">
+              <span className="hidden lg:inline">{t('signInSignUp')}</span>
+              <span className="inline lg:hidden">{t('signInSignUpShort')}</span>
+              <ExternalLink size={16} />
             </a>
 
             {/* Mobile Menu Toggle - Only visible below 'md' */}

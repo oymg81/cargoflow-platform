@@ -6,7 +6,8 @@
     "track": "Tracking",
     "resources": "Resources",
     "contact": "Contact",
-    "signInSignUp": "Sign In / Sign Up"
+    "signInSignUp": "Sign In / Sign Up",
+    "signInSignUpShort": "Sign In / Up"
   },
   "Hero": {
     "headline": "Integrated Global Logistics Solutions for Modern Businesses",

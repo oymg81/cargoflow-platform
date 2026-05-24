@@ -6,7 +6,8 @@
     "track": "Rastreo",
     "resources": "Recursos",
     "contact": "Contacto",
-    "signInSignUp": "Iniciar Sesión / Registrarse"
+    "signInSignUp": "Iniciar Sesión / Registrarse",
+    "signInSignUpShort": "Ingresar / Registrarse"
   },
   "Hero": {
     "headline": "Soluciones Integrales de Logística Global",
