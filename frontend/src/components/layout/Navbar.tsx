@@ -31,8 +31,8 @@ export default function Navbar() {
               <Image
                 src="/images/logo_logistik.png"
                 alt="Logisti-K Logo"
-                width={70}
-                height={70}
+                width={90}
+                height={90}
                 priority
                 className="h-10 w-10 md:h-12 md:w-12 lg:h-14 lg:w-14 object-contain"
               />
@@ -62,7 +62,7 @@ export default function Navbar() {
 
             {/* Sign In Button - Hide on smaller screens (md) to make room for nav links, show on lg */}
             <a href="https://logisti-k.managercargo.com/public/login/indexlogin/logincasillero" target="_blank" rel="noopener noreferrer" className="hidden lg:flex items-center gap-2 bg-gradient-to-r from-[#F05A28] to-[#E63946] hover:shadow-lg hover:shadow-[#F05A28]/30 hover:-translate-y-0.5 text-white px-4 lg:px-6 py-2 lg:py-2.5 rounded-full text-xs lg:text-sm font-bold transition-all whitespace-nowrap">
-              Sign In <ExternalLink size={16} />
+              {t('signInSignUp')} <ExternalLink size={16} />
             </a>
 
             {/* Mobile Menu Toggle - Only visible below 'md' */}
@@ -97,7 +97,7 @@ export default function Navbar() {
                   onClick={() => setIsOpen(false)}
                   className="bg-gradient-to-r from-[#F05A28] to-[#E63946] text-white text-center py-3 rounded-xl font-bold shadow-lg flex items-center justify-center gap-2 text-sm"
                 >
-                  Sign In <ExternalLink size={18} />
+                  {t('signInSignUp')} <ExternalLink size={18} />
                 </a>
               </div>
             </nav>
