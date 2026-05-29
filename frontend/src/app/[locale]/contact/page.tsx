@@ -64,7 +64,22 @@ export default function ContactPage() {
                   <button 
                     type="button"
                     onClick={() => {
-                      formRef.current?.reset();
+                      try {
+                        if (formRef.current) {
+                          formRef.current.reset();
+                          const elements = formRef.current.elements;
+                          for (let i = 0; i < elements.length; i++) {
+                            const el = elements[i];
+                            if (el instanceof HTMLInputElement || el instanceof HTMLTextAreaElement) {
+                              el.value = '';
+                            } else if (el instanceof HTMLSelectElement) {
+                              el.selectedIndex = 0;
+                            }
+                          }
+                        }
+                      } catch (err) {
+                        console.error('Failed to reset form elements:', err);
+                      }
                       setStatus('idle');
                     }}
                     className="mt-4 text-emerald-700 font-medium hover:underline"
