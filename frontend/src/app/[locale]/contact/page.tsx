@@ -62,6 +62,7 @@ export default function ContactPage() {
                   <h3 className="text-lg font-bold mb-2">{t('success_title')}</h3>
                   <p>{t('success_desc')}</p>
                   <button 
+                    type="button"
                     onClick={() => {
                       formRef.current?.reset();
                       setStatus('idle');
