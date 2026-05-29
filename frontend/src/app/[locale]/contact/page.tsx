@@ -1,12 +1,13 @@
 'use client';
 
 import { MapPin, Phone, Mail } from 'lucide-react';
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import { useTranslations } from 'next-intl';
 
 export default function ContactPage() {
   const t = useTranslations('Contact');
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
+  const formRef = useRef<HTMLFormElement>(null);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -56,19 +57,23 @@ export default function ContactPage() {
                 {t('form_title')}
               </h2>
               
-              {status === 'success' ? (
-                <div className="bg-emerald-50 text-emerald-800 p-6 rounded-lg border border-emerald-200">
+              {status === 'success' && (
+                <div className="bg-emerald-50 text-emerald-800 p-6 rounded-lg border border-emerald-200 mb-8">
                   <h3 className="text-lg font-bold mb-2">{t('success_title')}</h3>
                   <p>{t('success_desc')}</p>
                   <button 
-                    onClick={() => setStatus('idle')}
+                    onClick={() => {
+                      formRef.current?.reset();
+                      setStatus('idle');
+                    }}
                     className="mt-4 text-emerald-700 font-medium hover:underline"
                   >
                     {t('send_another')}
                   </button>
                 </div>
-              ) : (
-                <form onSubmit={handleSubmit} className="space-y-6">
+              )}
+              
+              <form ref={formRef} onSubmit={handleSubmit} className={status === 'success' ? 'hidden' : 'space-y-6'}>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
                       <label className="block text-sm font-semibold text-neutral-700 mb-2">
@@ -158,7 +163,6 @@ export default function ContactPage() {
                     )}
                   </button>
                 </form>
-              )}
             </div>
 
             {/* Contact Information */}
