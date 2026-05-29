@@ -82,7 +82,7 @@ export default function ContactPage() {
                       }
                       setStatus('idle');
                     }}
-                    className="mt-4 text-emerald-700 font-medium hover:underline"
+                    className="mt-4 inline-flex items-center px-3.5 py-1.5 border border-emerald-600 rounded-lg text-emerald-700 bg-white hover:bg-emerald-600 hover:text-white transition-all font-semibold text-sm cursor-pointer shadow-sm hover:shadow-md focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-1"
                   >
                     {t('send_another')}
                   </button>
