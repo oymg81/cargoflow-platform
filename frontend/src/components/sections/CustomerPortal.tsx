@@ -32,13 +32,13 @@ export default function CustomerPortal() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: idx * 0.1, duration: 0.5 }}
-              className="bg-gradient-to-br from-[#F5F5F5] to-[#DADADA] backdrop-blur-sm p-8 rounded-2xl shadow-sm border border-neutral-200 hover:shadow-xl hover:-translate-y-1 transition-all group"
+              className="bg-[linear-gradient(135deg,#F4F6F8_0%,#B6BBC2_100%)] rounded-3xl border border-[#B6BBC2]/55 shadow-[0_12px_28px_rgba(15,23,42,0.10)] hover:shadow-[0_18px_36px_rgba(15,23,42,0.14)] hover:-translate-y-1 transition-all duration-300 flex flex-col h-full p-8 group"
             >
-              <div className="w-14 h-14 bg-red-50 text-[#F05A28] rounded-xl flex items-center justify-center mb-6 group-hover:bg-[#F05A28] group-hover:text-white transition-colors">
+              <div className="w-14 h-14 rounded-xl bg-red-50 text-[#F05A28] flex items-center justify-center mb-6 shadow-inner group-hover:scale-110 transition-transform duration-300">
                 {feature.icon}
               </div>
-              <h3 className="text-xl font-bold text-[#07142b] mb-3">{feature.title}</h3>
-              <p className="text-neutral-600">{feature.desc}</p>
+              <h3 className="text-xl font-bold text-[#07142b] mb-3 tracking-tight">{feature.title}</h3>
+              <p className="text-[#475569] text-sm md:text-base leading-relaxed flex-grow">{feature.desc}</p>
             </motion.div>
           ))}
         </div>

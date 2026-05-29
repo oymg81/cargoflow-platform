@@ -41,6 +41,7 @@ app.post('/api/contact', (req, res) => {
   if (!name || !email || !message) {
     return res.status(400).json({ error: 'Name, email, and message are required' });
   }
+  console.log(`Mock Contact Submission: notifying sales@logisti-k.us of message from ${name} (${email})`);
   res.status(200).json({ success: true, message: 'Contact form submitted successfully' });
 });
 

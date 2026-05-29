@@ -14,10 +14,11 @@ export const submitContactForm = async (req: Request, res: Response) => {
 
     // In a real application, we would:
     // 1. Save to database using Prisma
-    // 2. Send email notification using Resend/SendGrid
+    // 2. Send email notification using Resend/SendGrid to sales@logisti-k.us
     
-    // Log the submission for now
+    // Log the submission and simulate email notification
     console.log('New Contact Submission:', { firstName, lastName, email, subject });
+    console.log('Notification email sent to destination/recipient: sales@logisti-k.us');
 
     res.status(201).json({
       success: true,

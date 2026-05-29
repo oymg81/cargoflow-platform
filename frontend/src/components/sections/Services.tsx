@@ -92,21 +92,19 @@ export default function Services() {
             <motion.div 
               key={index}
               variants={itemVariants}
-              className="bg-white border border-gray-100 rounded-2xl p-8 shadow-md hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 group"
+              className="bg-[linear-gradient(135deg,#F4F6F8_0%,#B6BBC2_100%)] rounded-3xl border border-[#B6BBC2]/55 shadow-[0_12px_28px_rgba(15,23,42,0.10)] hover:shadow-[0_18px_36px_rgba(15,23,42,0.14)] hover:-translate-y-1 transition-all duration-300 flex flex-col h-full group p-8"
             >
-              <div className={`w-14 h-14 rounded-lg flex items-center justify-center mb-6 ${service.color} group-hover:scale-110 transition-transform duration-300`}>
+              <div className={`w-14 h-14 rounded-xl flex items-center justify-center mb-6 shadow-inner ${service.color} group-hover:scale-110 transition-transform duration-300`}>
                 <service.icon size={28} />
               </div>
               
-              <h3 className="text-xl font-bold mb-4 text-[#07142b] group-hover:text-[#F05A28] transition-colors">
+              <h3 className="text-xl font-bold text-[#07142b] mb-3 tracking-tight group-hover:text-[#F05A28] transition-colors">
                 {service.title}
               </h3>
               
-              <p className="text-neutral-600 leading-relaxed mb-6 flex-grow">
+              <p className="text-[#475569] text-sm md:text-base leading-relaxed mb-6 flex-grow">
                 {service.description}
               </p>
-              
-
             </motion.div>
           ))}
         </motion.div>
