@@ -15,12 +15,12 @@ CREATE TABLE public.reviews (
 -- Enable Row Level Security (RLS) for reviews
 ALTER TABLE public.reviews ENABLE ROW LEVEL SECURITY;
 
--- Allow anonymous users to INSERT new reviews (Submit Review)
-CREATE POLICY "Allow anonymous users to insert reviews"
+-- Allow anonymous users to INSERT only pending reviews (Submit Review)
+CREATE POLICY "Allow anonymous users to insert pending reviews"
     ON public.reviews
     FOR INSERT
     TO public
-    WITH CHECK (true);
+    WITH CHECK (status = 'pending');
 
 -- Allow anonymous users to SELECT only APPROVED reviews
 CREATE POLICY "Allow anonymous users to read approved reviews"
@@ -29,9 +29,9 @@ CREATE POLICY "Allow anonymous users to read approved reviews"
     TO public
     USING (status = 'approved');
     
--- Note: You should create specific roles/policies for the Admin dashboard
--- For development/testing purposes, you can allow all operations:
--- CREATE POLICY "Allow all operations for anon" ON public.reviews FOR ALL TO public USING (true);
+-- Admin dashboard note:
+-- Do NOT allow public anon users to update, approve, reject, or delete reviews in production.
+-- Admin approve/reject/delete operations must be handled through protected server-side admin actions.
 
 
 -- 2. Create the Popups table
@@ -56,5 +56,6 @@ CREATE POLICY "Allow anonymous users to read active popup"
     TO public
     USING (is_active = true);
     
--- For development/testing purposes, you can allow all operations for admin:
--- CREATE POLICY "Allow all operations for anon" ON public.popups FOR ALL TO public USING (true);
+-- Admin dashboard note:
+-- Do NOT allow public anon users to create, update, toggle, or delete popups in production.
+-- Admin popup management must be handled through protected server-side admin actions.

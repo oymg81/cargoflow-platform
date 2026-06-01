@@ -57,13 +57,19 @@ export default function AdminPage() {
 
   // Review Actions
   const handleUpdateStatus = async (id: string, status: 'approved' | 'rejected' | 'pending') => {
-    await updateReviewStatus(id, status);
+    const res = await updateReviewStatus(id, status);
+    if (!res.success) {
+      alert(`Error updating status: ${res.error}\nMake sure RLS policies (e.g., UPDATE) are enabled and configured on your Supabase dashboard.`);
+    }
     loadData();
   };
 
   const handleDeleteReview = async (id: string) => {
     if (confirm('Are you sure you want to delete this review?')) {
-      await deleteReview(id);
+      const res = await deleteReview(id);
+      if (!res.success) {
+        alert(`Error deleting review: ${res.error}`);
+      }
       loadData();
     }
   };
@@ -81,25 +87,36 @@ export default function AdminPage() {
       is_active: formData.get('is_active') === 'on',
     };
 
+    let res;
     if (editingPopup) {
-      await updatePopup(editingPopup.id, data);
+      res = await updatePopup(editingPopup.id, data);
     } else {
-      await createPopup(data);
+      res = await createPopup(data);
     }
     
-    setShowPopupForm(false);
-    setEditingPopup(null);
+    if (!res.success) {
+      alert(`Error saving pop-up: ${res.error}\nMake sure RLS policies (e.g., INSERT/UPDATE) are enabled and configured on your Supabase dashboard.`);
+    } else {
+      setShowPopupForm(false);
+      setEditingPopup(null);
+    }
     loadData();
   };
 
   const handleTogglePopup = async (id: string, currentStatus: boolean) => {
-    await togglePopupActive(id, currentStatus);
+    const res = await togglePopupActive(id, currentStatus);
+    if (!res.success) {
+      alert(`Error toggling pop-up state: ${res.error}`);
+    }
     loadData();
   };
 
   const handleDeletePopup = async (id: string) => {
     if (confirm('Are you sure you want to delete this pop-up?')) {
-      await deletePopup(id);
+      const res = await deletePopup(id);
+      if (!res.success) {
+        alert(`Error deleting pop-up: ${res.error}`);
+      }
       loadData();
     }
   };
