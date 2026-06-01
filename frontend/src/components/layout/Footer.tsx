@@ -101,17 +101,16 @@ export default function Footer() {
             <Link href="/terms" className="hover:text-[#F05A28] transition-colors">{tFooter('terms')}</Link>
           </div>
           <div className="flex items-center justify-center md:justify-end gap-2 mt-2 md:mt-0">
-            <span className="text-gray-500 text-xs">Powered by</span>
             <a 
-              href="https://codingsoft.tech" 
+              href="https://www.codingsoft.tech/" 
               target="_blank" 
-              rel="noopener noreferrer"
-              className="flex items-center gap-1.5 group hover:opacity-90 transition-opacity"
+              rel="noreferrer"
+              className="flex items-center gap-1.5 group hover:opacity-90 transition-opacity text-[#3b82f6] text-sm font-semibold tracking-wide"
             >
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-[18px] h-[18px] text-[#3b82f6] group-hover:scale-105 transition-transform duration-200">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-[18px] h-[18px] group-hover:scale-105 transition-transform duration-200">
                 <path fillRule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm14.024-.983a1.125 1.125 0 010 1.966l-5.603 3.113A1.125 1.125 0 019 15.113V8.887c0-.857.921-1.4 1.671-.983l5.603 3.113z" clipRule="evenodd" />
               </svg>
-              <span className="text-[#3b82f6] text-sm font-semibold tracking-wide">CodingSoft Platform</span>
+              <span>{tFooter('powered_by')}</span>
             </a>
           </div>
         </div>
