@@ -1,6 +1,7 @@
 'use server';
 
 import { createClient } from '@/utils/supabase/server';
+import { supabaseAdmin } from '@/utils/supabase/admin';
 import { revalidatePath } from 'next/cache';
 
 export async function submitReview(data: { quote: string; author: string; role: string; company: string; rating: number }) {
@@ -50,9 +51,7 @@ export async function getApprovedReviews() {
 
 // Admin Actions
 export async function getAllReviews() {
-  const supabase = await createClient();
-  
-  const { data, error } = await supabase
+  const { data, error } = await supabaseAdmin
     .from('reviews')
     .select('*')
     .order('created_at', { ascending: false });
@@ -66,9 +65,7 @@ export async function getAllReviews() {
 }
 
 export async function updateReviewStatus(id: string, status: 'pending' | 'approved' | 'rejected') {
-  const supabase = await createClient();
-  
-  const { error } = await supabase
+  const { error } = await supabaseAdmin
     .from('reviews')
     .update({ status })
     .eq('id', id);
@@ -84,9 +81,7 @@ export async function updateReviewStatus(id: string, status: 'pending' | 'approv
 }
 
 export async function deleteReview(id: string) {
-  const supabase = await createClient();
-  
-  const { error } = await supabase
+  const { error } = await supabaseAdmin
     .from('reviews')
     .delete()
     .eq('id', id);

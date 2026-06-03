@@ -156,7 +156,13 @@ export default function ClientReviews() {
         )}
 
         <div className="max-w-7xl mx-auto relative px-4">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className={`grid grid-cols-1 gap-8 ${
+            reviews.length === 1 
+              ? 'md:max-w-md md:mx-auto grid-cols-1' 
+              : reviews.length === 2 
+                ? 'md:max-w-4xl md:mx-auto md:grid-cols-2' 
+                : 'md:grid-cols-3'
+          }`}>
             {reviews.map((review) => (
               <div key={review.id} className="bg-white rounded-2xl p-8 shadow-xl flex flex-col hover:-translate-y-1 transition-transform duration-300">
                 <div className="mb-6">
