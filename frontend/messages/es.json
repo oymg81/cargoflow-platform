@@ -180,5 +180,24 @@
     "error_msg": "Hubo un error al enviar su reseña. Por favor, inténtelo de nuevo.",
     "btn_submitting": "Enviando...",
     "empty_state": "Aún no hay reseñas de clientes. ¡Sea el primero en compartir su experiencia!"
+  },
+  "Terms": {
+    "title": "Términos de Servicio",
+    "heading": "TÉRMINOS Y CONDICIONES DE ENTREGA Y ALMACENAJE",
+    "subtitle": "LOGISTI-K",
+    "intro": "Al utilizar los servicios de LOGISTI-K, el cliente acepta los siguientes términos y condiciones:",
+    "sec1_title": "1. Confirmación de Pago",
+    "sec1_desc": "Toda mercancía, paquete o envío será entregado únicamente previa confirmación del pago total de los servicios, impuestos, almacenaje, cargos aduaneros u otros conceptos aplicables.",
+    "sec2_title": "2. Coordinación de Entregas y Recojos",
+    "sec2_desc": "Toda solicitud de recojo, entrega o programación de despacho deberá realizarse antes de las 12:00 p.m. hora local del día requerido.\n\nLas solicitudes recibidas después de las 12:00 p.m. serán programadas para el siguiente día hábil, sujetas a disponibilidad operativa.",
+    "sec3_title": "3. Almacenaje y Abandono de Mercancía",
+    "sec3_desc": "Los paquetes y mercancías permanecerán en almacén sin costo adicional únicamente durante el período establecido por LOGISTI-K.\n\nToda mercancía no reclamada dentro de los quince (15) días calendario posteriores a la notificación de disponibilidad para entrega o recojo será considerada en estado de abandono.\n\nUna vez declarado el abandono, LOGISTI-K tendrá el derecho de tomar posesión de la mercancía y disponer de ella según considere conveniente, sin obligación de compensación al cliente.",
+    "sec4_title": "4. Seguro, Daños y Pérdidas",
+    "sec4_desc": "Las reclamaciones por daño, pérdida o faltante de mercancía asegurada deberán ser notificadas por escrito dentro de las primeras cuarenta y ocho (48) horas posteriores a la recepción del envío.\n\nPara la evaluación de cualquier reclamo, el cliente deberá proporcionar evidencia fotográfica, documentación de respaldo y mantener el empaque original.\n\nTranscurrido dicho plazo, la cobertura del seguro quedará automáticamente sin efecto y no procederá ninguna indemnización o compensación.",
+    "sec5_title": "5. Limitación de Responsabilidad",
+    "sec5_desc": "LOGISTI-K no será responsable por reclamaciones presentadas fuera de los plazos establecidos en estos términos y condiciones.\n\nEl cliente reconoce y acepta que el incumplimiento de los procedimientos y tiempos indicados limita cualquier derecho a reclamo, reembolso o compensación.",
+    "important_title": "IMPORTANTE:",
+    "important_desc": "Toda mercancía será entregada únicamente previa confirmación de pago. Las coordinaciones de recojo o entrega deben realizarse antes de las 12:00 p.m.; de lo contrario, serán programadas para el siguiente día hábil. La mercancía no reclamada dentro de los 15 días calendario posteriores a su arribo será considerada en abandono y pasará a disposición de LOGISTI-K. Las reclamaciones por daño o pérdida de carga asegurada deberán presentarse dentro de las primeras 48 horas posteriores a la recepción; vencido dicho plazo, no procederá ninguna cobertura, indemnización o reclamo.",
+    "footer_rights": "© LOGISTI-K. Todos los derechos reservados."
   }
 }

@@ -180,5 +180,24 @@
     "error_msg": "There was an error submitting your review. Please try again.",
     "btn_submitting": "Submitting...",
     "empty_state": "No client reviews yet. Be the first to share your experience!"
+  },
+  "Terms": {
+    "title": "Terms of Service",
+    "heading": "TERMS AND CONDITIONS OF DELIVERY AND STORAGE",
+    "subtitle": "LOGISTI-K",
+    "intro": "By using LOGISTI-K services, the client accepts the following terms and conditions:",
+    "sec1_title": "1. Payment Confirmation",
+    "sec1_desc": "All merchandise, packages, or shipments will be delivered only upon confirmation of full payment for services, taxes, storage, customs duties, or other applicable concepts.",
+    "sec2_title": "2. Coordination of Deliveries and Pickups",
+    "sec2_desc": "Any request for pickup, delivery, or dispatch scheduling must be made before 12:00 p.m. local time on the required day.\n\nRequests received after 12:00 p.m. will be scheduled for the next business day, subject to operational availability.",
+    "sec3_title": "3. Storage and Abandonment of Merchandise",
+    "sec3_desc": "Packages and merchandise will remain in storage at no additional cost only during the period established by LOGISTI-K.\n\nAny merchandise not claimed within fifteen (15) calendar days after notification of availability for delivery or pickup will be considered abandoned.\n\nOnce abandonment is declared, LOGISTI-K shall have the right to take possession of the merchandise and dispose of it as it deems convenient, without any obligation to compensate the client.",
+    "sec4_title": "4. Insurance, Damages, and Losses",
+    "sec4_desc": "Claims for damage, loss, or missing insured merchandise must be notified in writing within the first forty-eight (48) hours following receipt of the shipment.\n\nFor the evaluation of any claim, the client must provide photographic evidence, supporting documentation, and keep the original packaging.\n\nAfter this period, insurance coverage will automatically be null and void, and no compensation or indemnity will apply.",
+    "sec5_title": "5. Limitation of Liability",
+    "sec5_desc": "LOGISTI-K will not be liable for claims submitted outside the deadlines established in these terms and conditions.\n\nThe client acknowledges and accepts that failure to comply with the indicated procedures and times limits any right to claim, refund, or compensation.",
+    "important_title": "IMPORTANT:",
+    "important_desc": "All merchandise will be delivered only upon confirmation of payment. Pickup or delivery coordination must be done before 12:00 p.m.; otherwise, it will be scheduled for the next business day. Merchandise not claimed within 15 calendar days of arrival will be considered abandoned and will become available to LOGISTI-K. Claims for damage or loss of insured cargo must be submitted within the first 48 hours of receipt; after this period, no coverage, compensation, or claim will apply.",
+    "footer_rights": "© LOGISTI-K. All rights reserved."
   }
 }
