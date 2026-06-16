@@ -199,5 +199,24 @@
     "important_title": "IMPORTANT:",
     "important_desc": "All merchandise will be delivered only upon confirmation of payment. Pickup or delivery coordination must be done before 12:00 p.m.; otherwise, it will be scheduled for the next business day. Merchandise not claimed within 15 calendar days of arrival will be considered abandoned and will become available to LOGISTI-K. Claims for damage or loss of insured cargo must be submitted within the first 48 hours of receipt; after this period, no coverage, compensation, or claim will apply.",
     "footer_rights": "© LOGISTI-K. All rights reserved."
+  },
+  "Privacy": {
+    "title": "Privacy Policy",
+    "heading": "PRIVACY POLICY",
+    "subtitle": "LOGISTI-K",
+    "intro": "At LOGISTI-K, we are committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your personal information when you use our website and logistics services.",
+    "sec1_title": "1. Information We Collect",
+    "sec1_desc": "We collect information you provide directly to us, such as your name, email address, phone number, shipping details, and billing information when you request a quote, book a shipment, or contact us.",
+    "sec2_title": "2. How We Use Your Information",
+    "sec2_desc": "We use the information we collect to provide and improve our logistics services, process shipments and invoices, send updates about your packages, respond to your inquiries, and comply with legal requirements.",
+    "sec3_title": "3. Information Sharing",
+    "sec3_desc": "We do not sell your personal information. We may share your information with trusted third-party service providers, agents, or customs authorities only as necessary to perform shipping, delivery, and logistics services on your behalf.",
+    "sec4_title": "4. Data Security",
+    "sec4_desc": "We implement appropriate technical and organizational measures to protect your personal information against unauthorized access, loss, alteration, or disclosure.",
+    "sec5_title": "5. Your Rights",
+    "sec5_desc": "You have the right to access, update, or request the deletion of your personal information in our records. To exercise these rights, please contact us at our official email address.",
+    "sms_title": "SMS Consent",
+    "sms_desc": "By submitting your phone number, you agree to receive SMS notifications from LOGISTI-K regarding shipment updates, package arrivals, invoices, payment reminders, and delivery notifications.\n\nMessage frequency varies.\nMessage and data rates may apply.\nReply STOP to opt out.\nReply HELP for assistance.",
+    "footer_rights": "© LOGISTI-K. All rights reserved."
   }
 }

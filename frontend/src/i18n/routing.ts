@@ -14,7 +14,10 @@ export const routing = defineRouting({
     '/services': '/services',
     '/track': '/track',
     '/contact': '/contact',
-    '/privacy': '/privacy'
+    '/privacy': {
+      en: '/privacy',
+      es: '/privacidad'
+    }
   }
 });
 

@@ -199,5 +199,24 @@
     "important_title": "IMPORTANTE:",
     "important_desc": "Toda mercancía será entregada únicamente previa confirmación de pago. Las coordinaciones de recojo o entrega deben realizarse antes de las 12:00 p.m.; de lo contrario, serán programadas para el siguiente día hábil. La mercancía no reclamada dentro de los 15 días calendario posteriores a su arribo será considerada en abandono y pasará a disposición de LOGISTI-K. Las reclamaciones por daño o pérdida de carga asegurada deberán presentarse dentro de las primeras 48 horas posteriores a la recepción; vencido dicho plazo, no procederá ninguna cobertura, indemnización o reclamo.",
     "footer_rights": "© LOGISTI-K. Todos los derechos reservados."
+  },
+  "Privacy": {
+    "title": "Política de Privacidad",
+    "heading": "POLÍTICA DE PRIVACIDAD",
+    "subtitle": "LOGISTI-K",
+    "intro": "En LOGISTI-K, estamos comprometidos a proteger su privacidad. Esta Política de Privacidad explica cómo recopilamos, utilizamos y salvaguardamos su información personal cuando utiliza nuestro sitio web y servicios logísticos.",
+    "sec1_title": "1. Información que Recopilamos",
+    "sec1_desc": "Recopilamos la información que nos proporciona directamente, como su nombre, dirección de correo electrónico, número de teléfono, detalles de envío e información de facturación cuando solicita una cotización, programa un envío o se pone en contacto con nosotros.",
+    "sec2_title": "2. Cómo Utilizamos su Información",
+    "sec2_desc": "Utilizamos la información recopilada para proporcionar y mejorar nuestros servicios logísticos, procesar envíos y facturas, enviar actualizaciones sobre sus paquetes, responder a sus consultas y cumplir con los requisitos legales.",
+    "sec3_title": "3. Información Compartida",
+    "sec3_desc": "No vendemos su información personal. Podemos compartir su información con proveedores de servicios externos de confianza, agentes o autoridades aduaneras únicamente cuando sea necesario para realizar los servicios de envío, entrega y logística en su nombre.",
+    "sec4_title": "4. Seguridad de los Datos",
+    "sec4_desc": "Implementamos medidas técnicas y organizativas adecuadas para proteger su información personal contra el acceso no autorizado, pérdida, alteración o divulgación.",
+    "sec5_title": "5. Sus Derechos",
+    "sec5_desc": "Tiene derecho a acceder, actualizar o solicitar la eliminación de su información personal de nuestros registros. Para ejercer estos derechos, comuníquese con nosotros a través de nuestro correo electrónico oficial.",
+    "sms_title": "Consentimiento para SMS",
+    "sms_desc": "Al enviar su número de teléfono, usted acepta recibir notificaciones por SMS de LOGISTI-K relacionadas con actualizaciones de envíos, llegada de paquetes, facturas, recordatorios de pago y notificaciones de entrega.\n\nLa frecuencia de los mensajes puede variar.\nPueden aplicarse cargos por mensajes y datos.\nResponda STOP para dejar de recibir mensajes.\nResponda HELP para recibir asistencia.",
+    "footer_rights": "© LOGISTI-K. Todos los derechos reservados."
   }
 }
