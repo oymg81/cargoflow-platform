@@ -79,6 +79,54 @@ export default async function TermsPage({ params }: { params: Promise<{ locale: 
               </p>
             </div>
 
+            {/* Credit/Debit Card Payment and No-Refund Policy section */}
+            <div className="pt-12 border-t border-neutral-200 mt-12">
+              <h2 className="text-2xl font-bold text-[#07142b] mb-2">
+                {t('payment_policy_heading')}
+              </h2>
+              <div className="inline-flex items-center gap-2 mb-6">
+                <div className="w-8 h-0.5 bg-[#E63946] rounded-full"></div>
+                <span className="text-[#E63946] font-bold uppercase tracking-widest text-xs">
+                  {t('subtitle')}
+                </span>
+              </div>
+              <p className="text-lg leading-relaxed font-medium text-neutral-700 mb-8">
+                {t('payment_policy_intro')}
+              </p>
+
+              <div className="space-y-8">
+                <div>
+                  <h3 className="text-xl font-bold text-[#07142b] mb-3">{t('pp_sec1_title')}</h3>
+                  <p className="leading-relaxed whitespace-pre-line">{t('pp_sec1_desc')}</p>
+                </div>
+
+                <div>
+                  <h3 className="text-xl font-bold text-[#07142b] mb-3">{t('pp_sec2_title')}</h3>
+                  <p className="leading-relaxed whitespace-pre-line">{t('pp_sec2_desc')}</p>
+                </div>
+
+                <div>
+                  <h3 className="text-xl font-bold text-[#07142b] mb-3">{t('pp_sec3_title')}</h3>
+                  <p className="leading-relaxed whitespace-pre-line">{t('pp_sec3_desc')}</p>
+                </div>
+
+                <div>
+                  <h3 className="text-xl font-bold text-[#07142b] mb-3">{t('pp_sec4_title')}</h3>
+                  <p className="leading-relaxed whitespace-pre-line">{t('pp_sec4_desc')}</p>
+                </div>
+
+                <div>
+                  <h3 className="text-xl font-bold text-[#07142b] mb-3">{t('pp_sec5_title')}</h3>
+                  <p className="leading-relaxed whitespace-pre-line">{t('pp_sec5_desc')}</p>
+                </div>
+
+                <div>
+                  <h3 className="text-xl font-bold text-[#07142b] mb-3">{t('pp_sec6_title')}</h3>
+                  <p className="leading-relaxed whitespace-pre-line">{t('pp_sec6_desc')}</p>
+                </div>
+              </div>
+            </div>
+
             {/* Bottom copyright notice */}
             <p className="text-sm text-neutral-400 pt-8 border-t border-neutral-100 text-center">
               {t('footer_rights')}
