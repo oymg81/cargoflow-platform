@@ -17,6 +17,12 @@ export default function Navbar() {
     { href: '/services', label: t('services'), active: pathname === '/services' },
     { href: '/about', label: t('about'), active: pathname === '/about' },
     { href: '/track', label: t('track'), active: pathname === '/track' },
+    {
+      href: 'https://logisti-k.managercargo.com/public/web/webindex/webcalculador/wi/1',
+      label: t('quote'),
+      active: false,
+      external: true
+    },
     { href: '/contact', label: t('contact'), active: pathname === '/contact' },
   ];
 
@@ -41,19 +47,37 @@ export default function Navbar() {
 
           {/* Navigation - Visible from 'md' instead of 'lg' */}
           <nav className="hidden md:flex items-center gap-3 lg:gap-6 xl:gap-8 justify-center flex-1 flex-nowrap overflow-hidden">
-            {links.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href as any}
-                className={`text-[#07142b] font-bold hover:text-[#F05A28] transition-colors flex items-center gap-1 whitespace-nowrap relative py-2 text-xs lg:text-sm xl:text-base ${link.active ? 'text-[#F05A28]' : ''}`}
-              >
-                {link.label}
-                
-                {link.active && (
-                  <span className="absolute bottom-0 left-0 w-full h-[2px] lg:h-[3px] bg-[#F05A28] rounded-full"></span>
-                )}
-              </Link>
-            ))}
+            {links.map((link) => {
+              const className = `text-[#07142b] font-bold hover:text-[#F05A28] transition-colors flex items-center gap-1 whitespace-nowrap relative py-2 text-xs lg:text-sm xl:text-base ${link.active ? 'text-[#F05A28]' : ''}`;
+              
+              if (link.external) {
+                return (
+                  <a
+                    key={link.href}
+                    href={link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={className}
+                  >
+                    {link.label}
+                  </a>
+                );
+              }
+
+              return (
+                <Link
+                  key={link.href}
+                  href={link.href as any}
+                  className={className}
+                >
+                  {link.label}
+                  
+                  {link.active && (
+                    <span className="absolute bottom-0 left-0 w-full h-[2px] lg:h-[3px] bg-[#F05A28] rounded-full"></span>
+                  )}
+                </Link>
+              );
+            })}
           </nav>
 
           <div className="flex items-center gap-2 lg:gap-4 shrink-0">
@@ -85,16 +109,35 @@ export default function Navbar() {
         {isOpen && (
           <div className="md:hidden absolute left-4 right-4 top-full mt-2 z-[9999] rounded-2xl border border-slate-200 bg-white p-4 shadow-2xl overflow-visible">
             <nav className="flex flex-col gap-3">
-              {links.map((link) => (
-                <Link
-                  key={link.href}
-                  href={link.href as any}
-                  onClick={() => setIsOpen(false)}
-                  className="text-base font-bold text-[#07142b] hover:text-[#F05A28] p-2 border-b border-slate-100 last:border-0"
-                >
-                  {link.label}
-                </Link>
-              ))}
+              {links.map((link) => {
+                const className = "text-base font-bold text-[#07142b] hover:text-[#F05A28] p-2 border-b border-slate-100 last:border-0";
+                
+                if (link.external) {
+                  return (
+                    <a
+                      key={link.href}
+                      href={link.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={() => setIsOpen(false)}
+                      className={className}
+                    >
+                      {link.label}
+                    </a>
+                  );
+                }
+
+                return (
+                  <Link
+                    key={link.href}
+                    href={link.href as any}
+                    onClick={() => setIsOpen(false)}
+                    className={className}
+                  >
+                    {link.label}
+                  </Link>
+                );
+              })}
             </nav>
           </div>
         )}
