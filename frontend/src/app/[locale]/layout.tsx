@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
@@ -44,6 +45,10 @@ export default async function RootLayout({
           <Footer />
         </NextIntlClientProvider>
         <GlobalPopup />
+        <Script
+          src="https://app.foes.pro/api/public/promotions/embed?key=974277e8-398d-4081-a887-f7f4bb43b38a"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );
