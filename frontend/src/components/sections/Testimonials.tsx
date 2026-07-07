@@ -1,46 +1,50 @@
 'use client';
 
-import { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { useState, useEffect } from 'react';
 import { Quote, Star, ChevronLeft, ChevronRight } from 'lucide-react';
 
-const TESTIMONIALS = [
-  {
-    id: 1,
-    quote: "LOGISTI-K has completely transformed our supply chain. Their international freight services are reliable, and their tracking system gives us the peace of mind we need for high-value shipments.",
-    author: "Sarah Jenkins",
-    role: "Director of Operations",
-    company: "Global Tech Imports",
-    rating: 5,
-  },
-  {
-    id: 2,
-    quote: "Working with them for our ocean freight was seamless. They handled all customs clearance professionally and avoided costly delays. Highly recommended for any business looking to expand globally.",
-    author: "David Chen",
-    role: "CEO",
-    company: "Chen Manufacturing",
-    rating: 5,
-  },
-  {
-    id: 3,
-    quote: "The level of customer service is unmatched. Whenever we have an urgent air freight request, the LOGISTI-K team goes above and beyond to ensure our cargo reaches its destination on time.",
-    author: "Maria Rodriguez",
-    role: "Supply Chain Manager",
-    company: "Latin Retail Group",
-    rating: 5,
-  }
-];
+interface Review {
+  id: string;
+  reviewer_name: string;
+  rating: number;
+  message: string;
+  service_type?: string | null;
+  created_at: string;
+  is_featured: boolean;
+}
 
 export default function Testimonials() {
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [testimonials, setTestimonials] = useState<Review[]>([]);
+  const [loading, setLoading] = useState(true);
 
-  const handleNext = () => {
-    setCurrentIndex((prev) => (prev + 1) % TESTIMONIALS.length);
-  };
+  useEffect(() => {
+    fetch('https://app.foes.pro/api/public/reviews?slug=logisti-k')
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.success && Array.isArray(data.reviews)) {
+          setTestimonials(data.reviews);
+        }
+        setLoading(false);
+      })
+      .catch((err) => {
+        console.error('Failed to fetch reviews:', err);
+        setLoading(false);
+      });
+  }, []);
 
-  const handlePrev = () => {
-    setCurrentIndex((prev) => (prev - 1 + TESTIMONIALS.length) % TESTIMONIALS.length);
-  };
+  if (loading) {
+    return (
+      <section className="py-24 bg-[#DADADA]">
+        <div className="container mx-auto px-4 text-center">
+          <p className="text-[#07142b] font-medium">Loading reviews...</p>
+        </div>
+      </section>
+    );
+  }
+
+  if (testimonials.length === 0) {
+    return null;
+  }
 
   return (
     <section className="py-24 bg-[#DADADA]">
@@ -56,14 +60,14 @@ export default function Testimonials() {
         <div className="max-w-7xl mx-auto relative px-4 md:px-16">
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative z-10">
-            {TESTIMONIALS.map((testimonial) => (
+            {testimonials.map((testimonial) => (
               <div key={testimonial.id} className="bg-white rounded-2xl p-8 shadow-xl flex flex-col hover:-translate-y-1 transition-transform duration-300">
                 <div className="mb-6">
                   <Quote size={48} className="text-[#F05A28] fill-[#F05A28] opacity-90" />
                 </div>
                 
                 <p className="text-neutral-700 font-medium leading-relaxed mb-8 flex-grow">
-                  {testimonial.quote}
+                  {testimonial.message}
                 </p>
                 
                 <div className="flex gap-1 mb-6">
@@ -73,12 +77,14 @@ export default function Testimonials() {
                 </div>
                 
                 <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 rounded-full overflow-hidden shrink-0 border border-neutral-100 shadow-sm bg-neutral-100 flex items-center justify-center text-primary font-bold">
-                    {testimonial.author.charAt(0)}
+                  <div className="w-12 h-12 rounded-full overflow-hidden shrink-0 border border-neutral-100 shadow-sm bg-neutral-100 flex items-center justify-center text-[#F05A28] font-bold">
+                    {testimonial.reviewer_name.charAt(0)}
                   </div>
                   <div>
-                    <h4 className="font-bold text-neutral-900">{testimonial.author}</h4>
-                    <p className="text-sm text-neutral-500">{testimonial.role}, {testimonial.company}</p>
+                    <h4 className="font-bold text-neutral-900">{testimonial.reviewer_name}</h4>
+                    {testimonial.service_type && (
+                      <p className="text-sm text-neutral-500">{testimonial.service_type}</p>
+                    )}
                   </div>
                 </div>
               </div>
@@ -111,3 +117,4 @@ export default function Testimonials() {
     </section>
   );
 }
+
