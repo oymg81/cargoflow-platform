@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { Quote, Star, ChevronLeft, ChevronRight } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 
 interface Review {
   id: string;
@@ -14,6 +15,7 @@ interface Review {
 }
 
 export default function Testimonials() {
+  const t = useTranslations('ClientReviews');
   const [testimonials, setTestimonials] = useState<Review[]>([]);
   const [loading, setLoading] = useState(true);
 
@@ -22,7 +24,9 @@ export default function Testimonials() {
       .then((res) => res.json())
       .then((data) => {
         if (data.success && Array.isArray(data.reviews)) {
-          setTestimonials(data.reviews);
+          // Filter to only display featured testimonials
+          const featured = data.reviews.filter((review: Review) => review.is_featured);
+          setTestimonials(featured);
         }
         setLoading(false);
       })
@@ -50,9 +54,11 @@ export default function Testimonials() {
     <section className="py-24 bg-[#DADADA]">
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-[#F77F00] font-bold tracking-wider uppercase mb-3 text-sm">TESTIMONIALS</h2>
+          <h2 className="text-[#F77F00] font-bold tracking-wider uppercase mb-3 text-sm">
+            {t('section_subtitle')}
+          </h2>
           <h3 className="text-3xl md:text-5xl font-bold text-[#07142b] mb-6">
-            What Our Clients Say
+            {t('section_title')}
           </h3>
           <div className="w-12 h-1 bg-[#F05A28] mx-auto mt-6"></div>
         </div>
@@ -71,14 +77,14 @@ export default function Testimonials() {
                 </p>
                 
                 <div className="flex gap-1 mb-6">
-                  {[...Array(testimonial.rating)].map((_, i) => (
+                  {[...Array(testimonial.rating || 5)].map((_, i) => (
                     <Star key={i} size={16} className="text-[#F05A28] fill-[#F05A28]" />
                   ))}
                 </div>
                 
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 rounded-full overflow-hidden shrink-0 border border-neutral-100 shadow-sm bg-neutral-100 flex items-center justify-center text-[#F05A28] font-bold">
-                    {testimonial.reviewer_name.charAt(0)}
+                    {testimonial.reviewer_name ? testimonial.reviewer_name.charAt(0) : '?'}
                   </div>
                   <div>
                     <h4 className="font-bold text-neutral-900">{testimonial.reviewer_name}</h4>
