@@ -42,7 +42,7 @@ export default function Testimonials() {
 
   useEffect(() => {
     const handleResize = () => {
-      setItemsPerView(window.innerWidth >= 768 ? 3 : 1);
+      setItemsPerView(window.innerWidth >= 1024 ? 3 : 1);
     };
     handleResize();
     window.addEventListener('resize', handleResize);
@@ -136,7 +136,7 @@ export default function Testimonials() {
               style={{ transform: `translateX(-${currentIndex * (100 / itemsPerView)}%)` }}
             >
               {testimonials.map((testimonial) => (
-                <div key={testimonial.id} className="w-full md:w-1/3 shrink-0 px-4">
+                <div key={testimonial.id} className="w-full lg:w-1/3 shrink-0 px-4">
                   <div className="bg-white rounded-2xl p-8 shadow-xl flex flex-col hover:-translate-y-1 transition-transform duration-300 h-full">
                     <div className="mb-6">
                       <Quote size={48} className="text-[#F05A28] fill-[#F05A28] opacity-90" />
@@ -174,14 +174,14 @@ export default function Testimonials() {
             <>
               <button 
                 onClick={prevSlide}
-                className="absolute left-0 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full border border-gray-300 flex items-center justify-center text-gray-500 hover:bg-white hover:text-gray-900 transition-colors shadow-sm hidden md:flex bg-white z-20 cursor-pointer"
+                className="absolute left-0 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full border border-gray-300 flex items-center justify-center text-gray-500 hover:bg-white hover:text-gray-900 transition-colors shadow-sm hidden lg:flex bg-white z-20 cursor-pointer"
                 aria-label="Previous testimonial"
               >
                 <ChevronLeft size={24} />
               </button>
               <button 
                 onClick={nextSlide}
-                className="absolute right-0 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-[#F05A28] flex items-center justify-center text-white hover:bg-[#D9481B] transition-colors shadow-lg hidden md:flex z-20 cursor-pointer"
+                className="absolute right-0 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-[#F05A28] flex items-center justify-center text-white hover:bg-[#D9481B] transition-colors shadow-lg hidden lg:flex z-20 cursor-pointer"
                 aria-label="Next testimonial"
               >
                 <ChevronRight size={24} />
