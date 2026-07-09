@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { Quote, Star, ChevronLeft, ChevronRight } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 
 interface Review {
   id: string;
@@ -16,12 +16,17 @@ interface Review {
 
 export default function Testimonials() {
   const t = useTranslations('ClientReviews');
+  const locale = useLocale();
   const [testimonials, setTestimonials] = useState<Review[]>([]);
   const [loading, setLoading] = useState(true);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [itemsPerView, setItemsPerView] = useState(1);
   const [touchStart, setTouchStart] = useState<number | null>(null);
   const [touchEnd, setTouchEnd] = useState<number | null>(null);
+  const [expandedCardId, setExpandedCardId] = useState<string | null>(null);
+
+  const seeMoreText = locale === 'es' ? 'Ver más' : 'See more';
+  const seeLessText = locale === 'es' ? 'Ver menos' : 'See less';
 
   useEffect(() => {
     fetch('https://app.foes.pro/api/public/reviews?slug=logisti-k')
@@ -142,9 +147,24 @@ export default function Testimonials() {
                       <Quote size={48} className="text-[#F05A28] fill-[#F05A28] opacity-90" />
                     </div>
                     
-                    <p className="text-neutral-700 font-medium leading-relaxed mb-8 flex-grow">
-                      {testimonial.message}
-                    </p>
+                    <div className="text-neutral-700 font-medium leading-relaxed mb-8 flex-grow">
+                      <p className="inline">
+                        {testimonial.message.length > 180 && expandedCardId !== testimonial.id
+                          ? `${testimonial.message.slice(0, 180)}...`
+                          : testimonial.message}
+                      </p>
+                      {testimonial.message.length > 180 && (
+                        <button
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            setExpandedCardId(expandedCardId === testimonial.id ? null : testimonial.id);
+                          }}
+                          className="text-[#F05A28] hover:text-[#D9481B] font-semibold ml-2 focus:outline-none cursor-pointer inline-block"
+                        >
+                          {expandedCardId === testimonial.id ? seeLessText : seeMoreText}
+                        </button>
+                      )}
+                    </div>
                     
                     <div className="flex gap-1 mb-6">
                       {[...Array(testimonial.rating || 5)].map((_, i) => (
