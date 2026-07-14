@@ -96,6 +96,8 @@
     "send_button": "Send Message",
     "success_title": "Message Sent Successfully!",
     "success_desc": "Thank you for reaching out. One of our logistics experts will contact you shortly.",
+    "error_title": "Error Sending Message",
+    "error_desc": "An error occurred while submitting your message. Please try again.",
     "send_another": "Send another message",
     "hq_title": "Global Headquarters",
     "office_label": "Office Location",
@@ -180,7 +182,9 @@
     "label_review": "Review *",
     "error_msg": "There was an error submitting your review. Please try again.",
     "btn_submitting": "Submitting...",
-    "empty_state": "No client reviews yet. Be the first to share your experience!"
+    "empty_state": "No client reviews yet. Be the first to share your experience!",
+    "floating_title": "Share Your Logisti-K Experience",
+    "floating_btn": "Leave a Review"
   },
   "Terms": {
     "title": "Terms of Service",

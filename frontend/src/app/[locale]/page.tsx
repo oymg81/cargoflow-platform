@@ -7,6 +7,7 @@ import TrackingPreview from '@/components/sections/TrackingPreview';
 
 import Cta from '@/components/sections/Cta';
 import CustomerPortal from '@/components/sections/CustomerPortal';
+import ReviewFloatingWidget from '@/components/sections/ReviewFloatingWidget';
 
 export default function HomePage() {
   return (
@@ -21,6 +22,9 @@ export default function HomePage() {
 
       <Cta />
       
+      {/* Review Floating Invitation Widget */}
+      <ReviewFloatingWidget />
+
       {/* WhatsApp Floating Button */}
       <a
         href="https://wa.me/17869454199"
