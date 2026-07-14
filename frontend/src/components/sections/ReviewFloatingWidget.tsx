@@ -62,7 +62,6 @@ export default function ReviewFloatingWidget() {
         href="https://app.foes.pro/review/logisti-k"
         target="_blank"
         rel="noopener noreferrer"
-        onClick={handleDismiss}
         className="w-full bg-[#F05A28] hover:bg-[#D9481B] text-white text-xs font-bold py-2.5 px-4 rounded-xl text-center shadow-sm hover:shadow-md transition-all active:scale-98 duration-200"
       >
         {t('floating_btn')}
